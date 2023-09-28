@@ -1,0 +1,4032 @@
+[
+  {
+    "warehouse": [
+      {
+        "id": "4c19062a-7798-4dcc-b33e-598488d12da6",
+        "created_at": "2023-09-28T04:32:24.797Z",
+        "updated_at": "2023-09-27T23:01:19.837Z",
+        "location": "New York",
+        "capacity": 80898,
+        "warehouse_type": "Distribution Center",
+        "operational_hours": "8:00 AM - 5:00 PM"
+      },
+      {
+        "id": "45428a35-b2fe-4aa1-bfc0-5a20391ae06c",
+        "created_at": "2023-09-27T09:27:04.097Z",
+        "updated_at": "2023-09-28T02:36:02.440Z",
+        "location": "Los Angeles",
+        "capacity": 30121,
+        "warehouse_type": "Fulfillment Center",
+        "operational_hours": "9:00 AM - 6:00 PM"
+      },
+      {
+        "id": "6960632e-bbf2-445e-b32f-e54ac4220884",
+        "created_at": "2023-09-28T05:59:40.292Z",
+        "updated_at": "2023-09-27T12:48:34.324Z",
+        "location": "Chicago",
+        "capacity": 97145,
+        "warehouse_type": "Cold Storage",
+        "operational_hours": "10:00 AM - 7:00 PM"
+      },
+      {
+        "id": "8dcb27a2-e874-4e35-abd9-fd604c17d926",
+        "created_at": "2023-09-28T07:27:08.958Z",
+        "updated_at": "2023-09-27T19:10:51.883Z",
+        "location": "Houston",
+        "capacity": 38331,
+        "warehouse_type": "Cross-Dock Facility",
+        "operational_hours": "7:00 AM - 4:00 PM"
+      },
+      {
+        "id": "cab598b9-800b-4428-b696-c14c099caab3",
+        "created_at": "2023-09-27T23:22:06.106Z",
+        "updated_at": "2023-09-28T03:22:59.671Z",
+        "location": "Miami",
+        "capacity": 74167,
+        "warehouse_type": "Consolidation Warehouse",
+        "operational_hours": "6:00 AM - 3:00 PM"
+      }
+    ],
+    "shipment": [
+      {
+        "id": "f9de9725-0c5f-4909-ae35-069723245c3d",
+        "created_at": "2023-09-27T23:47:20.826Z",
+        "updated_at": "2023-09-27T18:39:34.602Z",
+        "estimated_delivery_date": "2023-09-27T16:13:36.812Z",
+        "tracking_number": "123456789",
+        "shipment_status": "In Transit",
+        "carrier_name": "UPS",
+        "shipment_cost": 0.14035804965533316
+      },
+      {
+        "id": "8e5079ba-34c7-4a4d-a73b-d64d88b5b391",
+        "created_at": "2023-09-27T09:55:48.774Z",
+        "updated_at": "2023-09-27T19:56:17.491Z",
+        "estimated_delivery_date": "2023-09-28T02:21:19.992Z",
+        "tracking_number": "987654321",
+        "shipment_status": "Delivered",
+        "carrier_name": "FedEx",
+        "shipment_cost": 0.0935999695211649
+      },
+      {
+        "id": "c1e4adb3-549a-42be-bf4e-4a7f9b015266",
+        "created_at": "2023-09-27T18:58:22.007Z",
+        "updated_at": "2023-09-27T14:29:55.455Z",
+        "estimated_delivery_date": "2023-09-27T12:07:02.332Z",
+        "tracking_number": "567890123",
+        "shipment_status": "Out for Delivery",
+        "carrier_name": "DHL",
+        "shipment_cost": 0.31460666726343334
+      },
+      {
+        "id": "97d64991-f298-4daf-bfec-c75979d3723c",
+        "created_at": "2023-09-27T21:44:05.827Z",
+        "updated_at": "2023-09-27T09:36:26.463Z",
+        "estimated_delivery_date": "2023-09-27T08:41:45.164Z",
+        "tracking_number": "321098765",
+        "shipment_status": "Arrived at Destination",
+        "carrier_name": "USPS",
+        "shipment_cost": 0.11828560498543084
+      },
+      {
+        "id": "044dee40-1ee7-4dd2-a8b8-a9a4ef262f42",
+        "created_at": "2023-09-27T15:53:18.115Z",
+        "updated_at": "2023-09-28T00:21:24.921Z",
+        "estimated_delivery_date": "2023-09-27T19:49:48.792Z",
+        "tracking_number": "789012345",
+        "shipment_status": "Pending Shipment",
+        "carrier_name": "Amazon Logistics",
+        "shipment_cost": 0.10494596743956208
+      }
+    ],
+    "purchase_order": [
+      {
+        "id": "dc680c93-f251-45e6-a16a-1d06dbd78c9e",
+        "created_at": "2023-09-27T11:39:09.114Z",
+        "updated_at": "2023-09-27T16:20:30.386Z",
+        "expected_delivery_date": "2023-09-28T05:08:07.266Z",
+        "order_status": "Pending",
+        "delivery_notes": "Leave at front door"
+      },
+      {
+        "id": "88d94b85-c54b-4573-9acd-97a6de649ddf",
+        "created_at": "2023-09-27T22:07:54.656Z",
+        "updated_at": "2023-09-27T22:02:27.413Z",
+        "expected_delivery_date": "2023-09-27T10:05:07.555Z",
+        "order_status": "In Progress",
+        "delivery_notes": "Call before delivery"
+      },
+      {
+        "id": "74b369d3-7a97-4add-bd9a-a8b8c69d9759",
+        "created_at": "2023-09-27T08:50:40.689Z",
+        "updated_at": "2023-09-28T04:02:24.059Z",
+        "expected_delivery_date": "2023-09-28T06:13:21.564Z",
+        "order_status": "Completed",
+        "delivery_notes": "Signature required"
+      },
+      {
+        "id": "efef3aa2-a388-406b-a09b-1eb66aa0c17d",
+        "created_at": "2023-09-27T18:14:39.053Z",
+        "updated_at": "2023-09-27T23:18:39.283Z",
+        "expected_delivery_date": "2023-09-28T06:04:29.221Z",
+        "order_status": "Cancelled",
+        "delivery_notes": "Deliver to back entrance"
+      },
+      {
+        "id": "255d583e-41e7-4272-b126-227c5e2424d0",
+        "created_at": "2023-09-27T13:17:03.771Z",
+        "updated_at": "2023-09-27T12:01:03.476Z",
+        "expected_delivery_date": "2023-09-28T06:08:51.014Z",
+        "order_status": "On Hold",
+        "delivery_notes": "Hold for pickup"
+      }
+    ],
+    "product_category": [
+      {
+        "id": "9595df9f-cf0a-4fbf-a44e-bccbb180803c",
+        "created_at": "2023-09-27T09:22:43.737Z",
+        "updated_at": "2023-09-28T01:51:40.606Z",
+        "description": "Electronics",
+        "category_code": "ELE",
+        "category_image_url": "https://example.com/electronics.jpg"
+      },
+      {
+        "id": "9f8a2ad7-40dd-41ca-b404-63d0ae083c44",
+        "created_at": "2023-09-27T09:35:31.658Z",
+        "updated_at": "2023-09-27T17:36:50.658Z",
+        "description": "Clothing",
+        "category_code": "CLT",
+        "category_image_url": "https://example.com/clothing.jpg"
+      },
+      {
+        "id": "96df263b-43b4-40bb-b9c9-a91962984681",
+        "created_at": "2023-09-28T04:41:48.139Z",
+        "updated_at": "2023-09-27T09:28:18.784Z",
+        "description": "Home Decor",
+        "category_code": "HMD",
+        "category_image_url": "https://example.com/homedecor.jpg"
+      },
+      {
+        "id": "7206510b-09bb-4b97-93a8-f3a262260f8f",
+        "created_at": "2023-09-27T22:37:33.113Z",
+        "updated_at": "2023-09-27T11:09:54.926Z",
+        "description": "Sports Equipment",
+        "category_code": "SPT",
+        "category_image_url": "https://example.com/sportsequipment.jpg"
+      },
+      {
+        "id": "78a4cf96-54fb-4979-9f10-d79a84862067",
+        "created_at": "2023-09-27T10:36:51.181Z",
+        "updated_at": "2023-09-28T04:20:33.742Z",
+        "description": "Beauty Products",
+        "category_code": "BTP",
+        "category_image_url": "https://example.com/beautyproducts.jpg"
+      }
+    ],
+    "product": [
+      {
+        "id": "29d72fb5-522f-4aae-9a18-5cbadcc0c4bf",
+        "created_at": "2023-09-28T04:40:47.948Z",
+        "updated_at": "2023-09-27T20:59:04.843Z",
+        "product_description": "Smartphone",
+        "product_weight": 0.17843952286057174,
+        "product_dimensions": "5.7\" x 2.8\" x 0.3\"",
+        "product_material": "Glass, Aluminum",
+        "product_color": "Black",
+        "product_category": "Electronics",
+        "product_manufacturer": "Apple",
+        "product_price": 0.007551127811893821
+      },
+      {
+        "id": "480668ef-e565-4479-a7e1-48baeab885a5",
+        "created_at": "2023-09-27T14:37:57.486Z",
+        "updated_at": "2023-09-27T19:03:35.505Z",
+        "product_description": "T-Shirt",
+        "product_weight": 0.5533166285604239,
+        "product_dimensions": "S, M, L, XL",
+        "product_material": "Cotton",
+        "product_color": "White",
+        "product_category": "Clothing",
+        "product_manufacturer": "Nike",
+        "product_price": 0.9459903913084418
+      },
+      {
+        "id": "ca44f48a-060d-412d-ba3b-c4815b67b58b",
+        "created_at": "2023-09-27T12:42:34.674Z",
+        "updated_at": "2023-09-27T12:31:25.967Z",
+        "product_description": "Throw Pillow",
+        "product_weight": 0.09332757303491235,
+        "product_dimensions": "18\" x 18\"",
+        "product_material": "Polyester, Feather",
+        "product_color": "Red",
+        "product_category": "Home Decor",
+        "product_manufacturer": "IKEA",
+        "product_price": 0.9024284826591611
+      },
+      {
+        "id": "aeeabb43-0c95-46dc-b5ce-7482b1ee2ef7",
+        "created_at": "2023-09-28T00:30:54.201Z",
+        "updated_at": "2023-09-27T22:16:55.065Z",
+        "product_description": "Yoga Mat",
+        "product_weight": 0.68076146626845,
+        "product_dimensions": "72\" x 24\"",
+        "product_material": "PVC",
+        "product_color": "Blue",
+        "product_category": "Sports Equipment",
+        "product_manufacturer": "Adidas",
+        "product_price": 0.6309406354557723
+      },
+      {
+        "id": "82a49351-4654-4f6f-b34f-c990f4b13963",
+        "created_at": "2023-09-28T03:43:08.855Z",
+        "updated_at": "2023-09-27T14:14:50.889Z",
+        "product_description": "Lipstick",
+        "product_weight": 0.10895650531165302,
+        "product_dimensions": "0.12 oz",
+        "product_material": "Wax",
+        "product_color": "Pink",
+        "product_category": "Beauty Products",
+        "product_manufacturer": "Maybelline",
+        "product_price": 0.7052274490706623
+      }
+    ],
+    "order": [
+      {
+        "id": "86a8a14e-39ba-478b-aaaf-01ddb0689af4",
+        "created_at": "2023-09-28T02:35:21.974Z",
+        "updated_at": "2023-09-27T13:10:31.611Z",
+        "order_status": "Pending",
+        "delivery_date": "2023-09-28T00:25:03.979Z",
+        "estimated_delivery_date": "2023-09-27T15:44:58.571Z",
+        "order_tracking_number": "123456789",
+        "order_priority": "High"
+      },
+      {
+        "id": "4233759d-9941-4cbd-b449-de0235c58158",
+        "created_at": "2023-09-28T05:17:10.375Z",
+        "updated_at": "2023-09-27T22:44:42.915Z",
+        "order_status": "In Progress",
+        "delivery_date": "2023-09-27T16:43:12.073Z",
+        "estimated_delivery_date": "2023-09-27T17:20:10.337Z",
+        "order_tracking_number": "987654321",
+        "order_priority": "Medium"
+      },
+      {
+        "id": "c187d159-48d6-4e40-b602-649ddf4e2ad6",
+        "created_at": "2023-09-28T06:08:23.423Z",
+        "updated_at": "2023-09-28T02:33:12.911Z",
+        "order_status": "Completed",
+        "delivery_date": "2023-09-27T14:26:48.812Z",
+        "estimated_delivery_date": "2023-09-27T12:36:48.912Z",
+        "order_tracking_number": "567890123",
+        "order_priority": "Low"
+      },
+      {
+        "id": "675b55aa-94aa-4c65-8d50-d57a80c26f25",
+        "created_at": "2023-09-28T03:09:03.277Z",
+        "updated_at": "2023-09-27T22:40:50.336Z",
+        "order_status": "Cancelled",
+        "delivery_date": "2023-09-28T03:34:06.855Z",
+        "estimated_delivery_date": "2023-09-28T01:58:40.567Z",
+        "order_tracking_number": "321098765",
+        "order_priority": "Urgent"
+      },
+      {
+        "id": "185c374a-6067-46ad-8b75-a5e46adae8a7",
+        "created_at": "2023-09-28T00:18:40.503Z",
+        "updated_at": "2023-09-27T11:57:29.391Z",
+        "order_status": "On Hold",
+        "delivery_date": "2023-09-28T04:44:46.633Z",
+        "estimated_delivery_date": "2023-09-28T07:34:46.738Z",
+        "order_tracking_number": "789012345",
+        "order_priority": "Normal"
+      }
+    ],
+    "inventory": [
+      {
+        "id": "011b2034-8760-41ff-9584-3cf17c8afe0e",
+        "created_at": "2023-09-28T03:09:59.093Z",
+        "updated_at": "2023-09-27T10:07:24.317Z",
+        "last_checked": "2023-09-27T20:35:13.001Z",
+        "last_updated": "2023-09-28T00:24:07.805Z",
+        "quantity_on_hand": 71833,
+        "expiration_date": "2023-09-27T14:39:25.809Z",
+        "reorder_threshold": 27104
+      },
+      {
+        "id": "d8dd4fbc-5960-4169-a8c0-0d1c4603398e",
+        "created_at": "2023-09-28T07:26:08.984Z",
+        "updated_at": "2023-09-27T10:05:12.196Z",
+        "last_checked": "2023-09-27T18:57:26.904Z",
+        "last_updated": "2023-09-27T17:03:15.313Z",
+        "quantity_on_hand": 8756,
+        "expiration_date": "2023-09-28T00:48:10.216Z",
+        "reorder_threshold": 95917
+      },
+      {
+        "id": "0f922454-c2dd-4917-80a2-7743096addc0",
+        "created_at": "2023-09-27T21:11:58.681Z",
+        "updated_at": "2023-09-28T06:40:03.882Z",
+        "last_checked": "2023-09-28T06:50:54.690Z",
+        "last_updated": "2023-09-27T23:43:11.101Z",
+        "quantity_on_hand": 17032,
+        "expiration_date": "2023-09-27T22:08:07.753Z",
+        "reorder_threshold": 36258
+      },
+      {
+        "id": "74ddb106-db68-496e-bd22-0a4c417c9d40",
+        "created_at": "2023-09-27T12:39:30.208Z",
+        "updated_at": "2023-09-28T03:38:09.696Z",
+        "last_checked": "2023-09-28T00:49:15.912Z",
+        "last_updated": "2023-09-28T03:00:27.593Z",
+        "quantity_on_hand": 76089,
+        "expiration_date": "2023-09-27T19:35:36.390Z",
+        "reorder_threshold": 59041
+      },
+      {
+        "id": "d87f4c24-7a51-4380-8613-85592bea99b1",
+        "created_at": "2023-09-27T10:28:27.797Z",
+        "updated_at": "2023-09-27T11:27:59.115Z",
+        "last_checked": "2023-09-28T04:22:47.501Z",
+        "last_updated": "2023-09-28T07:17:37.205Z",
+        "quantity_on_hand": 31214,
+        "expiration_date": "2023-09-27T12:16:15.096Z",
+        "reorder_threshold": 45293
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "4323e2c6-4f56-4f08-b350-0d4b1a4627e9",
+        "email": "Alfonzo_Fritsch@roq.tech",
+        "firstName": "Lora",
+        "lastName": "Jacobi",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/20834753",
+        "tenantId": null
+      },
+      {
+        "reference": "38031d58-a353-430c-9eda-506ae0664aff",
+        "email": "Shyanne_Corkery@roq.tech",
+        "firstName": "Letitia",
+        "lastName": "O'Keefe",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/981.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "239d44da-c3e2-406a-8a51-5175ad74e74b",
+        "email": "Anthony_Grady66@roq.tech",
+        "firstName": "Katlynn",
+        "lastName": "Ernser",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/94580764",
+        "tenantId": null
+      },
+      {
+        "reference": "0ce4e358-23ed-484e-9594-c5cb227220e0",
+        "email": "Bertha_Boyle@roq.tech",
+        "firstName": "Lawrence",
+        "lastName": "Cartwright-Bogan",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1102.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "be936825-44c6-4709-b8ec-770e62fbc6fb",
+        "email": "Carissa_Wisoky17@roq.tech",
+        "firstName": "Lonie",
+        "lastName": "Koelpin",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/84827339",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "warehouse": [
+      {
+        "id": "0b7652e3-a300-402c-9bad-69f087f2b85d",
+        "created_at": "2023-09-27T16:15:34.404Z",
+        "updated_at": "2023-09-28T01:20:38.644Z",
+        "location": "New York",
+        "capacity": 62104,
+        "warehouse_type": "Distribution Center",
+        "operational_hours": "8:00 AM - 5:00 PM"
+      },
+      {
+        "id": "070451e0-d1d8-4012-aefd-e5116ea840dc",
+        "created_at": "2023-09-27T19:16:30.881Z",
+        "updated_at": "2023-09-27T09:38:20.316Z",
+        "location": "Los Angeles",
+        "capacity": 12660,
+        "warehouse_type": "Fulfillment Center",
+        "operational_hours": "9:00 AM - 6:00 PM"
+      },
+      {
+        "id": "f459a9e6-c9c2-4f7a-98c5-c4d1d09bff54",
+        "created_at": "2023-09-27T14:55:00.181Z",
+        "updated_at": "2023-09-27T23:41:35.554Z",
+        "location": "Chicago",
+        "capacity": 17647,
+        "warehouse_type": "Cold Storage",
+        "operational_hours": "24/7"
+      },
+      {
+        "id": "4ecc9f6e-bf02-42de-ba38-146464fa266b",
+        "created_at": "2023-09-27T08:45:45.039Z",
+        "updated_at": "2023-09-27T14:42:42.934Z",
+        "location": "Houston",
+        "capacity": 52273,
+        "warehouse_type": "Cross-Dock Facility",
+        "operational_hours": "7:00 AM - 4:00 PM"
+      },
+      {
+        "id": "599913f7-e279-4ced-bee8-d92f4c618b83",
+        "created_at": "2023-09-27T08:32:21.159Z",
+        "updated_at": "2023-09-27T17:47:23.715Z",
+        "location": "Miami",
+        "capacity": 54108,
+        "warehouse_type": "Bonded Warehouse",
+        "operational_hours": "10:00 AM - 7:00 PM"
+      }
+    ],
+    "shipment": [
+      {
+        "id": "7976f307-ff81-433b-85b3-3e15f2e0e9be",
+        "created_at": "2023-09-28T05:55:21.839Z",
+        "updated_at": "2023-09-27T10:29:21.363Z",
+        "estimated_delivery_date": "2023-09-27T15:50:20.698Z",
+        "tracking_number": "123456789",
+        "shipment_status": "In Transit",
+        "carrier_name": "UPS",
+        "shipment_cost": 0.60803063493222
+      },
+      {
+        "id": "6166d4e3-5955-4b67-864c-2ad286115131",
+        "created_at": "2023-09-28T04:37:58.893Z",
+        "updated_at": "2023-09-28T07:42:53.976Z",
+        "estimated_delivery_date": "2023-09-27T20:59:29.944Z",
+        "tracking_number": "987654321",
+        "shipment_status": "Delivered",
+        "carrier_name": "FedEx",
+        "shipment_cost": 0.7010536128655076
+      },
+      {
+        "id": "7bead22c-8652-4e7b-b863-e9d34ef759fe",
+        "created_at": "2023-09-27T11:29:07.086Z",
+        "updated_at": "2023-09-27T12:53:32.321Z",
+        "estimated_delivery_date": "2023-09-27T13:08:09.736Z",
+        "tracking_number": "456789123",
+        "shipment_status": "Out for Delivery",
+        "carrier_name": "DHL",
+        "shipment_cost": 0.28562454297207296
+      },
+      {
+        "id": "7d4206aa-02cc-42f6-8cd1-411536921d06",
+        "created_at": "2023-09-27T10:18:21.236Z",
+        "updated_at": "2023-09-27T17:34:45.043Z",
+        "estimated_delivery_date": "2023-09-27T21:30:07.060Z",
+        "tracking_number": "321654987",
+        "shipment_status": "Arrived at Destination",
+        "carrier_name": "USPS",
+        "shipment_cost": 0.20197230647318065
+      },
+      {
+        "id": "99652b72-d8ad-49fd-a18b-748202d929d6",
+        "created_at": "2023-09-27T09:56:54.993Z",
+        "updated_at": "2023-09-27T10:12:32.440Z",
+        "estimated_delivery_date": "2023-09-28T00:54:47.876Z",
+        "tracking_number": "789123456",
+        "shipment_status": "Pending",
+        "carrier_name": "Amazon Logistics",
+        "shipment_cost": 0.321436561178416
+      }
+    ],
+    "purchase_order": [
+      {
+        "id": "25d31e7a-6713-4852-be15-ad0f3927ae48",
+        "created_at": "2023-09-27T09:22:22.344Z",
+        "updated_at": "2023-09-27T21:24:03.792Z",
+        "expected_delivery_date": "2023-09-28T02:53:44.614Z",
+        "order_status": "Pending",
+        "delivery_notes": "Leave at front door"
+      },
+      {
+        "id": "50090f98-190d-4ab1-a6f9-653bd1527fe0",
+        "created_at": "2023-09-28T01:04:45.822Z",
+        "updated_at": "2023-09-27T15:40:24.935Z",
+        "expected_delivery_date": "2023-09-27T23:41:00.427Z",
+        "order_status": "Approved",
+        "delivery_notes": "Call before delivery"
+      },
+      {
+        "id": "b77e9487-a4de-4fd4-824b-b94315ec3fe2",
+        "created_at": "2023-09-28T07:21:13.939Z",
+        "updated_at": "2023-09-27T15:22:04.275Z",
+        "expected_delivery_date": "2023-09-27T18:20:51.756Z",
+        "order_status": "Shipped",
+        "delivery_notes": "Signature required"
+      },
+      {
+        "id": "0b847075-cc46-4414-b52c-3de5101c30a8",
+        "created_at": "2023-09-28T03:01:36.666Z",
+        "updated_at": "2023-09-27T23:21:28.729Z",
+        "expected_delivery_date": "2023-09-28T04:55:44.518Z",
+        "order_status": "Delivered",
+        "delivery_notes": "Fragile items"
+      },
+      {
+        "id": "4cf27437-8525-4207-a71c-0e12f9bd7e0f",
+        "created_at": "2023-09-27T20:45:40.714Z",
+        "updated_at": "2023-09-27T16:45:36.784Z",
+        "expected_delivery_date": "2023-09-27T09:56:26.770Z",
+        "order_status": "Cancelled",
+        "delivery_notes": "Handle with care"
+      }
+    ],
+    "product_category": [
+      {
+        "id": "3750d08f-6eed-410a-bf84-18faf83cb1fa",
+        "created_at": "2023-09-27T11:03:51.470Z",
+        "updated_at": "2023-09-27T20:10:54.998Z",
+        "description": "Electronics",
+        "category_code": "ELE",
+        "category_image_url": "https://example.com/electronics.jpg"
+      },
+      {
+        "id": "e6f098d9-e9a9-488e-b74a-32121f1a7d8c",
+        "created_at": "2023-09-27T14:06:32.655Z",
+        "updated_at": "2023-09-27T19:14:06.012Z",
+        "description": "Clothing",
+        "category_code": "CLT",
+        "category_image_url": "https://example.com/clothing.jpg"
+      },
+      {
+        "id": "609da928-8d1a-4ba7-b301-49c089e6f23d",
+        "created_at": "2023-09-27T19:30:58.459Z",
+        "updated_at": "2023-09-27T13:08:09.888Z",
+        "description": "Home Decor",
+        "category_code": "HMD",
+        "category_image_url": "https://example.com/home_decor.jpg"
+      },
+      {
+        "id": "f65e5ed6-cd12-4539-9211-f08014c1660e",
+        "created_at": "2023-09-27T13:31:08.250Z",
+        "updated_at": "2023-09-28T05:28:02.688Z",
+        "description": "Sports Equipment",
+        "category_code": "SPT",
+        "category_image_url": "https://example.com/sports_equipment.jpg"
+      },
+      {
+        "id": "d2d4a4a9-4587-4567-9ed1-f7872b4d4582",
+        "created_at": "2023-09-27T15:48:41.156Z",
+        "updated_at": "2023-09-28T03:17:54.497Z",
+        "description": "Beauty Products",
+        "category_code": "BTP",
+        "category_image_url": "https://example.com/beauty_products.jpg"
+      }
+    ],
+    "product": [
+      {
+        "id": "92441b99-b4cd-46e1-b8aa-0ba4d1f1f0c5",
+        "created_at": "2023-09-27T22:41:41.489Z",
+        "updated_at": "2023-09-28T05:32:57.202Z",
+        "product_description": "Smartphone",
+        "product_weight": 0.6945245177485049,
+        "product_dimensions": "5.8\" x 2.7\" x 0.3\"",
+        "product_material": "Plastic, Glass",
+        "product_color": "Black",
+        "product_category": "Electronics",
+        "product_manufacturer": "Apple",
+        "product_price": 0.48104594671167433
+      },
+      {
+        "id": "3538036a-7aa8-43cd-8fa1-8d2415805c2f",
+        "created_at": "2023-09-27T17:01:39.818Z",
+        "updated_at": "2023-09-27T16:45:36.271Z",
+        "product_description": "T-Shirt",
+        "product_weight": 0.6528504677116871,
+        "product_dimensions": "S, M, L, XL",
+        "product_material": "Cotton",
+        "product_color": "White",
+        "product_category": "Clothing",
+        "product_manufacturer": "Nike",
+        "product_price": 0.8591713816858828
+      },
+      {
+        "id": "b838fd3a-07fd-4c7f-a6a1-b74aed09940c",
+        "created_at": "2023-09-28T07:36:01.640Z",
+        "updated_at": "2023-09-27T10:39:43.234Z",
+        "product_description": "Throw Pillow",
+        "product_weight": 0.4352125402074307,
+        "product_dimensions": "16\" x 16\"",
+        "product_material": "Polyester",
+        "product_color": "Red",
+        "product_category": "Home Decor",
+        "product_manufacturer": "IKEA",
+        "product_price": 0.7853121573571116
+      },
+      {
+        "id": "1cc81b0d-6f37-4338-9f8f-d0de7b8ddc29",
+        "created_at": "2023-09-28T00:31:45.413Z",
+        "updated_at": "2023-09-27T12:24:19.214Z",
+        "product_description": "Tennis Racket",
+        "product_weight": 0.48708974849432707,
+        "product_dimensions": "27\" x 11\"",
+        "product_material": "Graphite, Titanium",
+        "product_color": "Blue",
+        "product_category": "Sports Equipment",
+        "product_manufacturer": "Wilson",
+        "product_price": 0.1736791622824967
+      },
+      {
+        "id": "f91c5997-5f8b-4259-9183-86dbebd0e60f",
+        "created_at": "2023-09-28T03:52:53.307Z",
+        "updated_at": "2023-09-28T00:39:26.702Z",
+        "product_description": "Lipstick",
+        "product_weight": 0.6217087465338409,
+        "product_dimensions": "0.12 oz",
+        "product_material": "Wax, Pigments",
+        "product_color": "Pink",
+        "product_category": "Beauty Products",
+        "product_manufacturer": "Maybelline",
+        "product_price": 0.800913829356432
+      }
+    ],
+    "order": [
+      {
+        "id": "06791d45-9f6d-4d37-811c-c719b8d6ebcb",
+        "created_at": "2023-09-27T13:57:10.407Z",
+        "updated_at": "2023-09-28T01:36:26.222Z",
+        "order_status": "Pending",
+        "delivery_date": "2023-09-28T01:33:24.533Z",
+        "estimated_delivery_date": "2023-09-27T11:39:48.992Z",
+        "order_tracking_number": "123456789",
+        "order_priority": "High"
+      },
+      {
+        "id": "c3793bfb-ac6f-4cfc-a86c-94c7ba91aa8b",
+        "created_at": "2023-09-27T17:34:14.416Z",
+        "updated_at": "2023-09-27T10:43:23.988Z",
+        "order_status": "Shipped",
+        "delivery_date": "2023-09-28T05:37:57.366Z",
+        "estimated_delivery_date": "2023-09-28T02:25:40.814Z",
+        "order_tracking_number": "987654321",
+        "order_priority": "Medium"
+      },
+      {
+        "id": "d07dc8f2-a301-492f-8fc0-9463cffb9988",
+        "created_at": "2023-09-28T02:22:27.816Z",
+        "updated_at": "2023-09-27T12:52:07.116Z",
+        "order_status": "Delivered",
+        "delivery_date": "2023-09-27T23:43:07.300Z",
+        "estimated_delivery_date": "2023-09-27T19:00:01.018Z",
+        "order_tracking_number": "456789123",
+        "order_priority": "Low"
+      },
+      {
+        "id": "a2b5c55f-b1ed-40e8-aed3-7427e9d15c66",
+        "created_at": "2023-09-27T16:33:21.204Z",
+        "updated_at": "2023-09-27T08:11:07.734Z",
+        "order_status": "Cancelled",
+        "delivery_date": "2023-09-27T22:03:29.834Z",
+        "estimated_delivery_date": "2023-09-28T07:44:05.421Z",
+        "order_tracking_number": "321654987",
+        "order_priority": "Urgent"
+      },
+      {
+        "id": "4886d5d8-9b26-4225-81ba-18e474866252",
+        "created_at": "2023-09-27T15:42:08.442Z",
+        "updated_at": "2023-09-27T14:56:41.705Z",
+        "order_status": "Returned",
+        "delivery_date": "2023-09-28T05:24:03.101Z",
+        "estimated_delivery_date": "2023-09-28T02:35:27.789Z",
+        "order_tracking_number": "789123456",
+        "order_priority": "Normal"
+      }
+    ],
+    "inventory": [
+      {
+        "id": "53742442-f5c8-4f5c-b165-18b5cf1857bf",
+        "created_at": "2023-09-27T11:40:58.491Z",
+        "updated_at": "2023-09-27T11:52:06.777Z",
+        "last_checked": "2023-09-28T00:11:25.199Z",
+        "last_updated": "2023-09-27T13:36:46.447Z",
+        "quantity_on_hand": 71060,
+        "expiration_date": "2023-09-28T05:12:47.390Z",
+        "reorder_threshold": 6922
+      },
+      {
+        "id": "c8de4030-78ce-4ffa-93af-911647c56c5b",
+        "created_at": "2023-09-27T21:05:42.135Z",
+        "updated_at": "2023-09-27T21:14:00.049Z",
+        "last_checked": "2023-09-27T12:49:58.563Z",
+        "last_updated": "2023-09-27T09:25:47.555Z",
+        "quantity_on_hand": 99358,
+        "expiration_date": "2023-09-28T07:30:19.043Z",
+        "reorder_threshold": 64332
+      },
+      {
+        "id": "99cc0321-0abc-449f-9728-230eafdec820",
+        "created_at": "2023-09-27T16:29:58.228Z",
+        "updated_at": "2023-09-27T10:47:11.828Z",
+        "last_checked": "2023-09-28T04:57:15.754Z",
+        "last_updated": "2023-09-27T14:51:24.315Z",
+        "quantity_on_hand": 16390,
+        "expiration_date": "2023-09-27T17:16:45.609Z",
+        "reorder_threshold": 49077
+      },
+      {
+        "id": "fe266ad9-f474-4d79-95d3-fcb0c052995b",
+        "created_at": "2023-09-28T04:58:06.511Z",
+        "updated_at": "2023-09-28T05:22:18.926Z",
+        "last_checked": "2023-09-27T11:26:50.622Z",
+        "last_updated": "2023-09-28T04:14:35.590Z",
+        "quantity_on_hand": 62713,
+        "expiration_date": "2023-09-27T18:54:24.273Z",
+        "reorder_threshold": 2089
+      },
+      {
+        "id": "a5ad6388-6f3c-412e-85a0-c35c22a44b88",
+        "created_at": "2023-09-28T07:35:45.986Z",
+        "updated_at": "2023-09-27T14:27:29.491Z",
+        "last_checked": "2023-09-27T08:30:51.455Z",
+        "last_updated": "2023-09-27T09:17:57.927Z",
+        "quantity_on_hand": 4716,
+        "expiration_date": "2023-09-27T10:53:30.151Z",
+        "reorder_threshold": 46341
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "83b5d948-371e-41dc-92c3-33e3b0c49965",
+        "email": "Theodora.Huels@roq.tech",
+        "firstName": "Henderson",
+        "lastName": "Littel",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/15785284",
+        "tenantId": null
+      },
+      {
+        "reference": "8d1916e9-da2a-4dae-bd65-397b21a4aa29",
+        "email": "Jasmin70@roq.tech",
+        "firstName": "Rebeka",
+        "lastName": "Harvey",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/31.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "8bb94379-6138-4a1c-b958-9b2e45b8fa54",
+        "email": "Imani_Wolf53@roq.tech",
+        "firstName": "Donavon",
+        "lastName": "Auer",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/49116672",
+        "tenantId": null
+      },
+      {
+        "reference": "27a2bfb0-0e39-4d9f-acda-b672debc7b62",
+        "email": "Robert72@roq.tech",
+        "firstName": "Landen",
+        "lastName": "Doyle",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/67182922",
+        "tenantId": null
+      },
+      {
+        "reference": "eb8f4a93-9c49-476f-883d-98360bfbdadb",
+        "email": "Luisa_Ferry@roq.tech",
+        "firstName": "Eve",
+        "lastName": "Aufderhar",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/88.jpg",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "warehouse": [
+      {
+        "id": "1135d652-acb9-4184-864d-3ad8f5f796e7",
+        "created_at": "2023-09-28T03:41:11.997Z",
+        "updated_at": "2023-09-28T04:39:01.099Z",
+        "location": "New York",
+        "capacity": 58846,
+        "warehouse_type": "Distribution Center",
+        "operational_hours": "8:00 AM - 5:00 PM"
+      },
+      {
+        "id": "3cd1bb66-0f8b-47d1-be29-a89fe031899e",
+        "created_at": "2023-09-27T17:56:37.148Z",
+        "updated_at": "2023-09-27T12:33:32.478Z",
+        "location": "Los Angeles",
+        "capacity": 18671,
+        "warehouse_type": "Fulfillment Center",
+        "operational_hours": "24/7"
+      },
+      {
+        "id": "fea3d397-84d7-4883-93c4-591f733afc16",
+        "created_at": "2023-09-28T03:09:59.987Z",
+        "updated_at": "2023-09-27T15:13:53.624Z",
+        "location": "Chicago",
+        "capacity": 91986,
+        "warehouse_type": "Cold Storage",
+        "operational_hours": "9:00 AM - 6:00 PM"
+      },
+      {
+        "id": "e1ebd31b-0972-45a4-8773-298bf8aa87ea",
+        "created_at": "2023-09-27T21:55:04.409Z",
+        "updated_at": "2023-09-28T01:49:26.684Z",
+        "location": "Houston",
+        "capacity": 80503,
+        "warehouse_type": "Cross-Docking Facility",
+        "operational_hours": "7:00 AM - 4:00 PM"
+      },
+      {
+        "id": "266c6a42-d05e-4e02-a012-4da8a1262423",
+        "created_at": "2023-09-28T00:28:23.988Z",
+        "updated_at": "2023-09-28T04:47:52.543Z",
+        "location": "Miami",
+        "capacity": 88840,
+        "warehouse_type": "Consolidation Warehouse",
+        "operational_hours": "10:00 AM - 7:00 PM"
+      }
+    ],
+    "shipment": [
+      {
+        "id": "6a8308d6-06e3-4a41-8954-64cee25662ac",
+        "created_at": "2023-09-27T12:18:18.589Z",
+        "updated_at": "2023-09-27T22:27:07.640Z",
+        "estimated_delivery_date": "2023-09-27T21:20:19.700Z",
+        "tracking_number": "123456789",
+        "shipment_status": "In Transit",
+        "carrier_name": "UPS",
+        "shipment_cost": 0.4401831936556846
+      },
+      {
+        "id": "4f459bf4-c530-478e-9ac7-dce360f38f06",
+        "created_at": "2023-09-28T05:26:15.375Z",
+        "updated_at": "2023-09-27T13:09:10.711Z",
+        "estimated_delivery_date": "2023-09-28T00:52:49.870Z",
+        "tracking_number": "987654321",
+        "shipment_status": "Delivered",
+        "carrier_name": "FedEx",
+        "shipment_cost": 0.18686660192906857
+      },
+      {
+        "id": "884bdc94-3a80-4f78-aec2-58a8ea6ba350",
+        "created_at": "2023-09-27T17:16:24.717Z",
+        "updated_at": "2023-09-27T18:01:03.928Z",
+        "estimated_delivery_date": "2023-09-28T00:13:10.714Z",
+        "tracking_number": "456789123",
+        "shipment_status": "Out for Delivery",
+        "carrier_name": "DHL",
+        "shipment_cost": 0.2460282479878515
+      },
+      {
+        "id": "98a490ad-4d3e-40df-8932-dc65e5adcd37",
+        "created_at": "2023-09-27T23:27:04.086Z",
+        "updated_at": "2023-09-27T11:48:56.092Z",
+        "estimated_delivery_date": "2023-09-27T23:17:31.459Z",
+        "tracking_number": "321654987",
+        "shipment_status": "Arrived at Destination",
+        "carrier_name": "USPS",
+        "shipment_cost": 0.3721112774219364
+      },
+      {
+        "id": "4e5bc695-f2ae-4a8d-bba3-84cbb9a54389",
+        "created_at": "2023-09-27T16:30:21.815Z",
+        "updated_at": "2023-09-28T01:15:39.827Z",
+        "estimated_delivery_date": "2023-09-27T09:43:28.025Z",
+        "tracking_number": "789123456",
+        "shipment_status": "In Customs",
+        "carrier_name": "Amazon Logistics",
+        "shipment_cost": 0.9442621604539454
+      }
+    ],
+    "purchase_order": [
+      {
+        "id": "99ecd825-84a4-43d0-a96c-eda199324c53",
+        "created_at": "2023-09-27T22:38:57.397Z",
+        "updated_at": "2023-09-28T00:18:23.052Z",
+        "expected_delivery_date": "2023-09-28T06:56:52.889Z",
+        "order_status": "Pending",
+        "delivery_notes": "Leave at front door"
+      },
+      {
+        "id": "a52fcd21-f013-4535-a83e-a1214de24ff5",
+        "created_at": "2023-09-27T15:51:23.486Z",
+        "updated_at": "2023-09-27T08:38:31.342Z",
+        "expected_delivery_date": "2023-09-27T18:46:46.895Z",
+        "order_status": "Confirmed",
+        "delivery_notes": "Signature required"
+      },
+      {
+        "id": "cb900066-51ca-4c1d-a1d7-c5c76387e1c4",
+        "created_at": "2023-09-28T02:37:13.431Z",
+        "updated_at": "2023-09-28T03:53:51.845Z",
+        "expected_delivery_date": "2023-09-27T17:21:51.934Z",
+        "order_status": "Shipped",
+        "delivery_notes": "Call before delivery"
+      },
+      {
+        "id": "f80d9f89-ec2c-4e90-b5d1-b848a83ad91f",
+        "created_at": "2023-09-27T20:16:59.095Z",
+        "updated_at": "2023-09-27T16:41:00.877Z",
+        "expected_delivery_date": "2023-09-27T16:28:37.178Z",
+        "order_status": "Delivered",
+        "delivery_notes": "Deliver to reception"
+      },
+      {
+        "id": "e11d51bf-6495-4c98-8ffc-311857326cba",
+        "created_at": "2023-09-27T23:44:08.606Z",
+        "updated_at": "2023-09-28T06:44:08.523Z",
+        "expected_delivery_date": "2023-09-27T23:24:46.444Z",
+        "order_status": "Cancelled",
+        "delivery_notes": "Do not deliver on weekends"
+      }
+    ],
+    "product_category": [
+      {
+        "id": "7e9e1202-8481-48e6-980b-cbb117928fb8",
+        "created_at": "2023-09-27T23:51:15.538Z",
+        "updated_at": "2023-09-27T17:46:47.624Z",
+        "description": "Electronics",
+        "category_code": "ELE",
+        "category_image_url": "https://example.com/electronics.jpg"
+      },
+      {
+        "id": "275e25ac-ab75-435b-9df4-da31c5c3df74",
+        "created_at": "2023-09-27T21:48:53.648Z",
+        "updated_at": "2023-09-27T17:58:26.929Z",
+        "description": "Home Decor",
+        "category_code": "DEC",
+        "category_image_url": "https://example.com/homedecor.jpg"
+      },
+      {
+        "id": "0f10dd14-132f-4c04-9cfb-cd69a7d0d557",
+        "created_at": "2023-09-27T14:42:14.944Z",
+        "updated_at": "2023-09-28T03:26:16.464Z",
+        "description": "Clothing",
+        "category_code": "CLT",
+        "category_image_url": "https://example.com/clothing.jpg"
+      },
+      {
+        "id": "6ed707f4-7229-4e0a-befa-e0cac509eca2",
+        "created_at": "2023-09-28T04:48:12.751Z",
+        "updated_at": "2023-09-27T16:32:43.784Z",
+        "description": "Beauty",
+        "category_code": "BTY",
+        "category_image_url": "https://example.com/beauty.jpg"
+      },
+      {
+        "id": "4d4e3129-653e-4d95-a9d1-d3f93dda8b45",
+        "created_at": "2023-09-28T01:12:42.073Z",
+        "updated_at": "2023-09-28T05:05:29.033Z",
+        "description": "Sports",
+        "category_code": "SPR",
+        "category_image_url": "https://example.com/sports.jpg"
+      }
+    ],
+    "product": [
+      {
+        "id": "7aefd2d2-24cd-48f6-aaf7-d875a2d8a9b3",
+        "created_at": "2023-09-28T02:44:28.376Z",
+        "updated_at": "2023-09-27T21:06:57.331Z",
+        "product_description": "Smartphone",
+        "product_weight": 0.5106170896906406,
+        "product_dimensions": "5.7\" x 2.8\" x 0.3\"",
+        "product_material": "Plastic",
+        "product_color": "Black",
+        "product_category": "Electronics",
+        "product_manufacturer": "Apple",
+        "product_price": 0.26652340474538505
+      },
+      {
+        "id": "17a7283b-d02f-438c-abc6-b31987512f9b",
+        "created_at": "2023-09-28T04:36:08.506Z",
+        "updated_at": "2023-09-27T14:26:13.766Z",
+        "product_description": "Throw Pillow",
+        "product_weight": 0.8972693241667002,
+        "product_dimensions": "18\" x 18\"",
+        "product_material": "Cotton",
+        "product_color": "Blue",
+        "product_category": "Home Decor",
+        "product_manufacturer": "IKEA",
+        "product_price": 0.5409557742532343
+      },
+      {
+        "id": "160619fe-2b14-4237-836b-46f0a37628c2",
+        "created_at": "2023-09-27T10:01:50.840Z",
+        "updated_at": "2023-09-28T04:01:08.448Z",
+        "product_description": "T-Shirt",
+        "product_weight": 0.6356631121598184,
+        "product_dimensions": "M",
+        "product_material": "Polyester",
+        "product_color": "Red",
+        "product_category": "Clothing",
+        "product_manufacturer": "Nike",
+        "product_price": 0.6106540095061064
+      },
+      {
+        "id": "8a1642e8-f6e1-4228-969c-768a3b744dcd",
+        "created_at": "2023-09-27T19:44:48.201Z",
+        "updated_at": "2023-09-27T20:09:51.879Z",
+        "product_description": "Lipstick",
+        "product_weight": 0.22088088793680072,
+        "product_dimensions": "3.5\" x 0.8\"",
+        "product_material": "Cosmetics",
+        "product_color": "Pink",
+        "product_category": "Beauty",
+        "product_manufacturer": "Maybelline",
+        "product_price": 0.4303475592751056
+      },
+      {
+        "id": "00e2ccfd-799b-4f65-b7ab-22698009cd12",
+        "created_at": "2023-09-27T18:27:33.067Z",
+        "updated_at": "2023-09-27T09:31:02.468Z",
+        "product_description": "Yoga Mat",
+        "product_weight": 0.5746440296061337,
+        "product_dimensions": "72\" x 24\"",
+        "product_material": "Rubber",
+        "product_color": "Green",
+        "product_category": "Sports",
+        "product_manufacturer": "Lululemon",
+        "product_price": 0.5441021048463881
+      }
+    ],
+    "order": [
+      {
+        "id": "847f1b25-b67b-45ed-a672-ce2fc6e3c806",
+        "created_at": "2023-09-28T05:56:11.682Z",
+        "updated_at": "2023-09-27T09:58:02.822Z",
+        "order_status": "Pending",
+        "delivery_date": "2023-09-28T04:27:01.434Z",
+        "estimated_delivery_date": "2023-09-28T05:12:02.920Z",
+        "order_tracking_number": "123456789",
+        "order_priority": "High"
+      },
+      {
+        "id": "2d032c08-aa76-4046-a2a2-54c0a1845108",
+        "created_at": "2023-09-27T22:46:11.696Z",
+        "updated_at": "2023-09-28T00:00:03.655Z",
+        "order_status": "Confirmed",
+        "delivery_date": "2023-09-28T06:08:29.099Z",
+        "estimated_delivery_date": "2023-09-27T11:23:42.992Z",
+        "order_tracking_number": "987654321",
+        "order_priority": "Medium"
+      },
+      {
+        "id": "610d0782-0ebb-497c-b136-e28ae8bfffda",
+        "created_at": "2023-09-28T05:48:52.917Z",
+        "updated_at": "2023-09-27T15:33:27.148Z",
+        "order_status": "Shipped",
+        "delivery_date": "2023-09-28T06:28:56.513Z",
+        "estimated_delivery_date": "2023-09-27T14:44:05.020Z",
+        "order_tracking_number": "456789123",
+        "order_priority": "Low"
+      },
+      {
+        "id": "b7b90f8a-c2bb-447e-a4f1-e675f8297bf0",
+        "created_at": "2023-09-27T14:08:03.248Z",
+        "updated_at": "2023-09-28T07:02:29.825Z",
+        "order_status": "Delivered",
+        "delivery_date": "2023-09-27T22:35:10.902Z",
+        "estimated_delivery_date": "2023-09-27T20:40:52.261Z",
+        "order_tracking_number": "321654987",
+        "order_priority": "Urgent"
+      },
+      {
+        "id": "573fefd0-bc2d-4194-a2bc-6bcb0a4ce93d",
+        "created_at": "2023-09-27T18:50:25.819Z",
+        "updated_at": "2023-09-28T01:32:07.029Z",
+        "order_status": "Cancelled",
+        "delivery_date": "2023-09-27T16:06:36.589Z",
+        "estimated_delivery_date": "2023-09-27T23:47:16.784Z",
+        "order_tracking_number": "789123456",
+        "order_priority": "Normal"
+      }
+    ],
+    "inventory": [
+      {
+        "id": "7cd81942-6782-4369-8735-0843e8d2e708",
+        "created_at": "2023-09-28T00:15:26.452Z",
+        "updated_at": "2023-09-27T09:11:37.675Z",
+        "last_checked": "2023-09-27T11:55:05.321Z",
+        "last_updated": "2023-09-28T02:06:43.402Z",
+        "quantity_on_hand": 13203,
+        "expiration_date": "2023-09-28T05:17:10.796Z",
+        "reorder_threshold": 37875
+      },
+      {
+        "id": "44811eff-4228-449c-9ea2-01f93d8bb583",
+        "created_at": "2023-09-27T08:00:58.146Z",
+        "updated_at": "2023-09-27T19:07:27.034Z",
+        "last_checked": "2023-09-27T11:11:55.752Z",
+        "last_updated": "2023-09-27T13:12:16.245Z",
+        "quantity_on_hand": 32732,
+        "expiration_date": "2023-09-27T17:08:35.464Z",
+        "reorder_threshold": 49532
+      },
+      {
+        "id": "cf9d3ed4-2665-4c4d-bde4-a669b145300b",
+        "created_at": "2023-09-27T18:40:16.838Z",
+        "updated_at": "2023-09-27T17:30:39.734Z",
+        "last_checked": "2023-09-27T14:53:14.102Z",
+        "last_updated": "2023-09-27T12:39:19.943Z",
+        "quantity_on_hand": 56883,
+        "expiration_date": "2023-09-27T13:00:53.359Z",
+        "reorder_threshold": 62158
+      },
+      {
+        "id": "d823e193-ca04-4ede-a581-773884091a28",
+        "created_at": "2023-09-28T04:28:44.496Z",
+        "updated_at": "2023-09-27T16:24:22.316Z",
+        "last_checked": "2023-09-27T13:28:27.191Z",
+        "last_updated": "2023-09-27T11:29:28.470Z",
+        "quantity_on_hand": 98712,
+        "expiration_date": "2023-09-27T17:37:25.770Z",
+        "reorder_threshold": 63076
+      },
+      {
+        "id": "769b5eb0-a659-4df2-80c8-1e6d405e4893",
+        "created_at": "2023-09-27T09:51:59.156Z",
+        "updated_at": "2023-09-27T13:43:02.496Z",
+        "last_checked": "2023-09-28T05:24:50.439Z",
+        "last_updated": "2023-09-27T18:22:21.798Z",
+        "quantity_on_hand": 7168,
+        "expiration_date": "2023-09-27T17:34:17.269Z",
+        "reorder_threshold": 99055
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "8e4c9558-a721-4dbe-be43-f6c78a6d67c3",
+        "email": "Clarabelle_McCullough79@roq.tech",
+        "firstName": "Yasmine",
+        "lastName": "Mayer",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/608.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "3af3c3d2-9b67-4f70-aa16-0bec617c0c1c",
+        "email": "Cathy.Blanda-Hodkiewicz43@roq.tech",
+        "firstName": "Jarret",
+        "lastName": "Stamm",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/83098806",
+        "tenantId": null
+      },
+      {
+        "reference": "d5d95279-d085-4843-9cd4-140ed0ee7413",
+        "email": "Hubert.Schmidt54@roq.tech",
+        "firstName": "Ruth",
+        "lastName": "Kemmer",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/532.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "7355967d-d6c3-4344-a9d7-fe5f833820df",
+        "email": "Jermey84@roq.tech",
+        "firstName": "Fidel",
+        "lastName": "Daugherty",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73629256",
+        "tenantId": null
+      },
+      {
+        "reference": "4d075198-9cd7-454c-b857-1b48b648a8be",
+        "email": "Brianne.Wisoky3@roq.tech",
+        "firstName": "Eulalia",
+        "lastName": "Gerlach",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/29266306",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "warehouse": [
+      {
+        "id": "4b962134-fda5-440a-ad0f-b152d86afe75",
+        "created_at": "2023-09-28T01:54:37.670Z",
+        "updated_at": "2023-09-27T20:24:52.955Z",
+        "location": "New York",
+        "capacity": 71558,
+        "warehouse_type": "Distribution Center",
+        "operational_hours": "8:00 AM - 5:00 PM"
+      },
+      {
+        "id": "035c2188-7082-45fe-a91d-42b259b60960",
+        "created_at": "2023-09-27T23:12:22.811Z",
+        "updated_at": "2023-09-27T19:22:57.311Z",
+        "location": "Los Angeles",
+        "capacity": 10856,
+        "warehouse_type": "Fulfillment Center",
+        "operational_hours": "9:00 AM - 6:00 PM"
+      },
+      {
+        "id": "f8a9da78-6ddc-42cc-b55c-a15e09b077f6",
+        "created_at": "2023-09-27T21:40:48.300Z",
+        "updated_at": "2023-09-27T13:06:39.270Z",
+        "location": "Chicago",
+        "capacity": 88275,
+        "warehouse_type": "Cold Storage",
+        "operational_hours": "24/7"
+      },
+      {
+        "id": "15f842cd-67dd-44eb-9bd9-2e1232431618",
+        "created_at": "2023-09-28T07:04:59.537Z",
+        "updated_at": "2023-09-27T22:27:04.525Z",
+        "location": "Houston",
+        "capacity": 12625,
+        "warehouse_type": "Cross-Dock Facility",
+        "operational_hours": "7:00 AM - 4:00 PM"
+      },
+      {
+        "id": "468bd0b2-c963-4f67-8814-ff5985568cc3",
+        "created_at": "2023-09-28T05:40:28.941Z",
+        "updated_at": "2023-09-27T10:11:46.609Z",
+        "location": "Miami",
+        "capacity": 87041,
+        "warehouse_type": "Bonded Warehouse",
+        "operational_hours": "10:00 AM - 7:00 PM"
+      }
+    ],
+    "shipment": [
+      {
+        "id": "677f505c-36db-4ac8-8592-48728aaa8f3e",
+        "created_at": "2023-09-27T10:52:29.515Z",
+        "updated_at": "2023-09-27T21:53:43.579Z",
+        "estimated_delivery_date": "2023-09-28T03:49:20.750Z",
+        "tracking_number": "123456789",
+        "shipment_status": "In Transit",
+        "carrier_name": "UPS",
+        "shipment_cost": 0.8002240690402687
+      },
+      {
+        "id": "0d466606-81d1-45cf-8488-c0e62d0b13e9",
+        "created_at": "2023-09-27T13:43:07.645Z",
+        "updated_at": "2023-09-27T17:10:54.263Z",
+        "estimated_delivery_date": "2023-09-28T07:07:46.561Z",
+        "tracking_number": "987654321",
+        "shipment_status": "Delivered",
+        "carrier_name": "FedEx",
+        "shipment_cost": 0.8655868202913553
+      },
+      {
+        "id": "f91da753-4d4c-4299-8bcf-f5a34865265e",
+        "created_at": "2023-09-27T11:50:55.532Z",
+        "updated_at": "2023-09-27T19:59:41.011Z",
+        "estimated_delivery_date": "2023-09-27T13:24:41.406Z",
+        "tracking_number": "567890123",
+        "shipment_status": "Out for Delivery",
+        "carrier_name": "DHL",
+        "shipment_cost": 0.27193145314231515
+      },
+      {
+        "id": "61376a84-39ef-4d3a-904c-b8d8e90eca15",
+        "created_at": "2023-09-27T08:40:33.718Z",
+        "updated_at": "2023-09-27T09:00:04.639Z",
+        "estimated_delivery_date": "2023-09-27T08:56:57.481Z",
+        "tracking_number": "321098765",
+        "shipment_status": "Arrived at Destination",
+        "carrier_name": "USPS",
+        "shipment_cost": 0.08433786034584045
+      },
+      {
+        "id": "3c4a7ac8-3b19-4df1-b625-3df44d4be5a1",
+        "created_at": "2023-09-27T11:19:44.140Z",
+        "updated_at": "2023-09-27T23:39:39.637Z",
+        "estimated_delivery_date": "2023-09-28T05:58:49.578Z",
+        "tracking_number": "789012345",
+        "shipment_status": "Exception",
+        "carrier_name": "Amazon Logistics",
+        "shipment_cost": 0.5571690287906677
+      }
+    ],
+    "purchase_order": [
+      {
+        "id": "17913cbd-9569-46ce-bc6c-896f0c24909e",
+        "created_at": "2023-09-28T03:20:35.469Z",
+        "updated_at": "2023-09-28T03:43:45.276Z",
+        "expected_delivery_date": "2023-09-27T13:09:20.011Z",
+        "order_status": "Pending",
+        "delivery_notes": "Leave at front door"
+      },
+      {
+        "id": "6932acea-8e38-4689-a49b-999f5ff12823",
+        "created_at": "2023-09-27T13:46:59.037Z",
+        "updated_at": "2023-09-27T16:49:44.345Z",
+        "expected_delivery_date": "2023-09-27T10:58:00.427Z",
+        "order_status": "Processing",
+        "delivery_notes": "Signature required"
+      },
+      {
+        "id": "800be689-d29b-4551-9939-7279a56507cd",
+        "created_at": "2023-09-27T12:46:38.780Z",
+        "updated_at": "2023-09-28T01:10:45.366Z",
+        "expected_delivery_date": "2023-09-28T02:32:05.144Z",
+        "order_status": "Shipped",
+        "delivery_notes": "Call before delivery"
+      },
+      {
+        "id": "960f9c1c-9d27-4471-aeb1-f54102e1352b",
+        "created_at": "2023-09-27T08:27:03.149Z",
+        "updated_at": "2023-09-28T07:45:32.458Z",
+        "expected_delivery_date": "2023-09-27T08:39:21.379Z",
+        "order_status": "Delivered",
+        "delivery_notes": "Do not ship on weekends"
+      },
+      {
+        "id": "3da21d4d-aa46-43df-8112-fc1a6d56447a",
+        "created_at": "2023-09-28T06:15:56.037Z",
+        "updated_at": "2023-09-28T05:37:50.528Z",
+        "expected_delivery_date": "2023-09-27T16:48:45.392Z",
+        "order_status": "Cancelled",
+        "delivery_notes": "Ship to alternate address"
+      }
+    ],
+    "product_category": [
+      {
+        "id": "3799fd7c-879a-4a2f-acfa-6dc4e009d1dc",
+        "created_at": "2023-09-28T01:11:04.704Z",
+        "updated_at": "2023-09-27T08:00:39.063Z",
+        "description": "Electronics",
+        "category_code": "ELECT",
+        "category_image_url": "https://example.com/electronics.jpg"
+      },
+      {
+        "id": "80b13dd9-ed13-4f10-a8d2-121414b070ad",
+        "created_at": "2023-09-28T07:36:55.176Z",
+        "updated_at": "2023-09-27T22:12:39.946Z",
+        "description": "Clothing",
+        "category_code": "CLOTH",
+        "category_image_url": "https://example.com/clothing.jpg"
+      },
+      {
+        "id": "012e3c1b-efd8-46a2-93b3-31cd0fcdc49d",
+        "created_at": "2023-09-27T11:01:00.018Z",
+        "updated_at": "2023-09-27T10:20:34.744Z",
+        "description": "Home Decor",
+        "category_code": "HOME",
+        "category_image_url": "https://example.com/homedecor.jpg"
+      },
+      {
+        "id": "739c63e2-cb00-4449-9427-600fd5425cf3",
+        "created_at": "2023-09-28T01:00:09.112Z",
+        "updated_at": "2023-09-28T06:05:42.584Z",
+        "description": "Sports Equipment",
+        "category_code": "SPORT",
+        "category_image_url": "https://example.com/sportsequipment.jpg"
+      },
+      {
+        "id": "d6cb5e9b-7185-4806-990e-37aff4de34e5",
+        "created_at": "2023-09-27T14:08:00.657Z",
+        "updated_at": "2023-09-28T02:42:38.028Z",
+        "description": "Beauty",
+        "category_code": "BEAUTY",
+        "category_image_url": "https://example.com/beauty.jpg"
+      }
+    ],
+    "product": [
+      {
+        "id": "8b2a8182-4327-4501-9988-5329e7dd3db3",
+        "created_at": "2023-09-28T06:00:52.159Z",
+        "updated_at": "2023-09-27T20:57:43.605Z",
+        "product_description": "Smartphone",
+        "product_weight": 0.29935587104409933,
+        "product_dimensions": "5.8\" x 2.7\" x 0.3\"",
+        "product_material": "Glass, Metal, Plastic",
+        "product_color": "Black",
+        "product_category": "Electronics",
+        "product_manufacturer": "Apple",
+        "product_price": 0.6219960188027471
+      },
+      {
+        "id": "d634a6e6-ac45-42e8-b685-ec656ca465de",
+        "created_at": "2023-09-27T22:07:12.651Z",
+        "updated_at": "2023-09-28T02:55:42.958Z",
+        "product_description": "T-Shirt",
+        "product_weight": 0.688279374036938,
+        "product_dimensions": "S, M, L, XL",
+        "product_material": "Cotton",
+        "product_color": "White",
+        "product_category": "Clothing",
+        "product_manufacturer": "Nike",
+        "product_price": 0.18292084080167115
+      },
+      {
+        "id": "d4247ba8-1e2b-44d2-bde1-fc0739ec2654",
+        "created_at": "2023-09-27T20:47:59.969Z",
+        "updated_at": "2023-09-27T11:20:45.064Z",
+        "product_description": "Throw Pillow",
+        "product_weight": 0.28657191479578614,
+        "product_dimensions": "18\" x 18\"",
+        "product_material": "Polyester",
+        "product_color": "Red",
+        "product_category": "Home Decor",
+        "product_manufacturer": "IKEA",
+        "product_price": 0.9570861719548702
+      },
+      {
+        "id": "bd42de52-d197-43ef-9af7-09c94dbd6917",
+        "created_at": "2023-09-27T22:10:07.053Z",
+        "updated_at": "2023-09-27T12:21:50.184Z",
+        "product_description": "Yoga Mat",
+        "product_weight": 0.25684821978211403,
+        "product_dimensions": "24\" x 68\"",
+        "product_material": "Rubber",
+        "product_color": "Blue",
+        "product_category": "Sports Equipment",
+        "product_manufacturer": "Adidas",
+        "product_price": 0.9234400726854801
+      },
+      {
+        "id": "7b5ea0e5-7360-435e-9c43-24e9174dfeb1",
+        "created_at": "2023-09-28T04:08:33.801Z",
+        "updated_at": "2023-09-27T09:28:22.553Z",
+        "product_description": "Lipstick",
+        "product_weight": 0.04339873977005482,
+        "product_dimensions": "0.12 oz",
+        "product_material": "Wax",
+        "product_color": "Pink",
+        "product_category": "Beauty",
+        "product_manufacturer": "Maybelline",
+        "product_price": 0.32942653354257345
+      }
+    ],
+    "order": [
+      {
+        "id": "fb06df16-36d1-4942-b583-c47d461bfc91",
+        "created_at": "2023-09-27T23:44:07.812Z",
+        "updated_at": "2023-09-27T19:09:57.389Z",
+        "order_status": "Pending",
+        "delivery_date": "2023-09-27T11:12:02.238Z",
+        "estimated_delivery_date": "2023-09-27T09:30:51.433Z",
+        "order_tracking_number": "123456789",
+        "order_priority": "High"
+      },
+      {
+        "id": "05bc0a8b-0e0d-4d7c-9087-c26938457804",
+        "created_at": "2023-09-28T03:32:34.452Z",
+        "updated_at": "2023-09-27T18:20:45.035Z",
+        "order_status": "Processing",
+        "delivery_date": "2023-09-27T14:23:42.518Z",
+        "estimated_delivery_date": "2023-09-27T11:38:26.858Z",
+        "order_tracking_number": "987654321",
+        "order_priority": "Medium"
+      },
+      {
+        "id": "fdd4da1d-3016-489a-bf32-98c0a204fd9f",
+        "created_at": "2023-09-28T00:23:44.973Z",
+        "updated_at": "2023-09-27T18:18:36.440Z",
+        "order_status": "Shipped",
+        "delivery_date": "2023-09-27T10:06:59.470Z",
+        "estimated_delivery_date": "2023-09-28T01:03:14.484Z",
+        "order_tracking_number": "567890123",
+        "order_priority": "Low"
+      },
+      {
+        "id": "5f287d99-db34-464f-8565-418305057700",
+        "created_at": "2023-09-28T05:56:03.538Z",
+        "updated_at": "2023-09-28T07:38:21.321Z",
+        "order_status": "Delivered",
+        "delivery_date": "2023-09-27T22:56:18.456Z",
+        "estimated_delivery_date": "2023-09-28T06:01:21.403Z",
+        "order_tracking_number": "321098765",
+        "order_priority": "Urgent"
+      },
+      {
+        "id": "00da2edb-db96-4a8b-9010-3e94c34af868",
+        "created_at": "2023-09-27T22:07:24.613Z",
+        "updated_at": "2023-09-28T00:19:47.824Z",
+        "order_status": "Cancelled",
+        "delivery_date": "2023-09-27T22:44:51.333Z",
+        "estimated_delivery_date": "2023-09-27T08:21:24.547Z",
+        "order_tracking_number": "789012345",
+        "order_priority": "Normal"
+      }
+    ],
+    "inventory": [
+      {
+        "id": "89d5e1f2-a415-4729-af45-3fffdcfdaf4b",
+        "created_at": "2023-09-27T10:25:59.469Z",
+        "updated_at": "2023-09-27T19:26:30.925Z",
+        "last_checked": "2023-09-28T05:35:20.432Z",
+        "last_updated": "2023-09-27T19:11:35.486Z",
+        "quantity_on_hand": 67774,
+        "expiration_date": "2023-09-27T23:34:20.864Z",
+        "reorder_threshold": 89092
+      },
+      {
+        "id": "196f5c93-c6f1-474f-b125-c20cc081cb18",
+        "created_at": "2023-09-27T08:51:51.084Z",
+        "updated_at": "2023-09-27T21:21:43.025Z",
+        "last_checked": "2023-09-27T08:22:25.162Z",
+        "last_updated": "2023-09-28T01:13:12.077Z",
+        "quantity_on_hand": 86972,
+        "expiration_date": "2023-09-28T07:17:19.212Z",
+        "reorder_threshold": 14968
+      },
+      {
+        "id": "0164aad6-81ec-433e-8e73-d731ce88619f",
+        "created_at": "2023-09-28T07:28:16.806Z",
+        "updated_at": "2023-09-28T05:13:09.559Z",
+        "last_checked": "2023-09-28T04:25:18.645Z",
+        "last_updated": "2023-09-27T23:16:38.562Z",
+        "quantity_on_hand": 35290,
+        "expiration_date": "2023-09-28T06:10:33.745Z",
+        "reorder_threshold": 8409
+      },
+      {
+        "id": "27e9b3f4-2464-4ffc-8795-9334a516680b",
+        "created_at": "2023-09-28T01:11:35.901Z",
+        "updated_at": "2023-09-27T18:22:55.596Z",
+        "last_checked": "2023-09-27T20:50:15.241Z",
+        "last_updated": "2023-09-27T10:19:33.372Z",
+        "quantity_on_hand": 88375,
+        "expiration_date": "2023-09-27T09:29:03.438Z",
+        "reorder_threshold": 90399
+      },
+      {
+        "id": "9e31eb3c-3b8e-4d26-8867-46f12f72cd75",
+        "created_at": "2023-09-28T02:18:43.461Z",
+        "updated_at": "2023-09-27T10:28:28.305Z",
+        "last_checked": "2023-09-27T23:36:33.717Z",
+        "last_updated": "2023-09-27T13:38:55.931Z",
+        "quantity_on_hand": 15703,
+        "expiration_date": "2023-09-27T13:22:48.557Z",
+        "reorder_threshold": 89940
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "0f9a7e91-335b-467a-b38d-474d6b79e55a",
+        "email": "Jose55@roq.tech",
+        "firstName": "Collin",
+        "lastName": "Herzog",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/587.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "39215488-7b03-42e0-ab63-9789f25028a9",
+        "email": "Sarai95@roq.tech",
+        "firstName": "Irving",
+        "lastName": "Bernier",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/33992323",
+        "tenantId": null
+      },
+      {
+        "reference": "225f6976-b958-4268-b2ab-2c2ebd09799c",
+        "email": "Alessandro99@roq.tech",
+        "firstName": "Kelli",
+        "lastName": "Sipes",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/83931489",
+        "tenantId": null
+      },
+      {
+        "reference": "440b75cd-a841-4a83-83d4-3213e938d15d",
+        "email": "Alvis79@roq.tech",
+        "firstName": "Brice",
+        "lastName": "Weber",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/42543376",
+        "tenantId": null
+      },
+      {
+        "reference": "f8840bde-3d6b-47b6-84a9-29455d3e71f5",
+        "email": "Werner.Jones@roq.tech",
+        "firstName": "Roy",
+        "lastName": "Hammes",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/61806543",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "warehouse": [
+      {
+        "id": "c3ee2428-3643-4881-b688-bb1502d3aba7",
+        "created_at": "2023-09-27T17:43:05.367Z",
+        "updated_at": "2023-09-28T02:47:50.153Z",
+        "location": "New York",
+        "capacity": 83057,
+        "warehouse_type": "Distribution Center",
+        "operational_hours": "8:00 AM - 6:00 PM"
+      },
+      {
+        "id": "c4181666-1f6d-403f-8542-c8c9f607ad46",
+        "created_at": "2023-09-27T21:32:13.143Z",
+        "updated_at": "2023-09-28T06:37:24.938Z",
+        "location": "Los Angeles",
+        "capacity": 56087,
+        "warehouse_type": "Fulfillment Center",
+        "operational_hours": "9:00 AM - 5:00 PM"
+      },
+      {
+        "id": "35f9792e-fa08-4bf1-83de-d0085a397159",
+        "created_at": "2023-09-27T14:40:19.918Z",
+        "updated_at": "2023-09-27T22:46:46.643Z",
+        "location": "Chicago",
+        "capacity": 42117,
+        "warehouse_type": "Cold Storage",
+        "operational_hours": "24/7"
+      },
+      {
+        "id": "141a1541-47de-4ccc-8b3e-3866c915956c",
+        "created_at": "2023-09-27T23:43:18.831Z",
+        "updated_at": "2023-09-27T10:02:28.710Z",
+        "location": "Houston",
+        "capacity": 4362,
+        "warehouse_type": "Cross-docking Facility",
+        "operational_hours": "7:00 AM - 9:00 PM"
+      },
+      {
+        "id": "4104c17e-cf9d-4c38-adef-341c7e65cc89",
+        "created_at": "2023-09-27T10:05:50.678Z",
+        "updated_at": "2023-09-27T15:58:12.797Z",
+        "location": "Miami",
+        "capacity": 79471,
+        "warehouse_type": "Bonded Warehouse",
+        "operational_hours": "10:00 AM - 8:00 PM"
+      }
+    ],
+    "shipment": [
+      {
+        "id": "aecb7a22-306d-45bd-85a0-de444a794f92",
+        "created_at": "2023-09-27T10:29:01.032Z",
+        "updated_at": "2023-09-28T00:01:58.834Z",
+        "estimated_delivery_date": "2023-09-28T00:54:06.920Z",
+        "tracking_number": "123456789",
+        "shipment_status": "In Transit",
+        "carrier_name": "UPS",
+        "shipment_cost": 0.5690324488095939
+      },
+      {
+        "id": "c40a38a2-c19b-4ca4-a9c0-fab752322a6a",
+        "created_at": "2023-09-27T23:22:38.135Z",
+        "updated_at": "2023-09-27T23:59:41.661Z",
+        "estimated_delivery_date": "2023-09-27T21:19:52.211Z",
+        "tracking_number": "987654321",
+        "shipment_status": "Delivered",
+        "carrier_name": "FedEx",
+        "shipment_cost": 0.4645559578202665
+      },
+      {
+        "id": "147cf7df-23ab-414a-bf08-2a22cd1d7b13",
+        "created_at": "2023-09-28T03:17:48.301Z",
+        "updated_at": "2023-09-27T08:40:51.375Z",
+        "estimated_delivery_date": "2023-09-28T02:57:33.171Z",
+        "tracking_number": "456789123",
+        "shipment_status": "Out for Delivery",
+        "carrier_name": "DHL",
+        "shipment_cost": 0.11727836867794394
+      },
+      {
+        "id": "81bc7abe-00a5-4fe2-a6b3-6f2170ebcb5d",
+        "created_at": "2023-09-27T13:35:04.595Z",
+        "updated_at": "2023-09-27T08:49:41.321Z",
+        "estimated_delivery_date": "2023-09-28T00:39:19.466Z",
+        "tracking_number": "321654987",
+        "shipment_status": "Arrived at Destination",
+        "carrier_name": "USPS",
+        "shipment_cost": 0.9482371604535729
+      },
+      {
+        "id": "ab7c648f-7b13-4610-8fea-2a0b9ac8e37b",
+        "created_at": "2023-09-27T13:27:26.356Z",
+        "updated_at": "2023-09-28T05:19:19.576Z",
+        "estimated_delivery_date": "2023-09-28T04:40:25.362Z",
+        "tracking_number": "789123456",
+        "shipment_status": "Shipment Delayed",
+        "carrier_name": "Amazon Logistics",
+        "shipment_cost": 0.6040054515469819
+      }
+    ],
+    "purchase_order": [
+      {
+        "id": "f30e1443-8d41-4229-9941-a54137950d64",
+        "created_at": "2023-09-27T20:43:38.980Z",
+        "updated_at": "2023-09-27T22:31:11.323Z",
+        "expected_delivery_date": "2023-09-27T17:07:53.278Z",
+        "order_status": "Pending",
+        "delivery_notes": "Leave at front door"
+      },
+      {
+        "id": "55ae51d3-a59d-4ee4-a016-5e58b1a29393",
+        "created_at": "2023-09-27T12:23:09.699Z",
+        "updated_at": "2023-09-27T14:41:21.297Z",
+        "expected_delivery_date": "2023-09-27T19:50:44.048Z",
+        "order_status": "Processing",
+        "delivery_notes": "Call before delivery"
+      },
+      {
+        "id": "73822576-0953-41c9-bada-4182f40f0088",
+        "created_at": "2023-09-27T08:10:13.432Z",
+        "updated_at": "2023-09-27T18:51:35.825Z",
+        "expected_delivery_date": "2023-09-27T09:48:47.246Z",
+        "order_status": "Shipped",
+        "delivery_notes": "Signature required"
+      },
+      {
+        "id": "f18c3161-3acf-4443-abe6-cd5ff71642ca",
+        "created_at": "2023-09-27T23:40:26.960Z",
+        "updated_at": "2023-09-27T19:45:28.312Z",
+        "expected_delivery_date": "2023-09-27T09:02:44.102Z",
+        "order_status": "Delivered",
+        "delivery_notes": "Fragile items"
+      },
+      {
+        "id": "85dd5242-d053-4ba9-ac5e-122a6acbd367",
+        "created_at": "2023-09-27T08:14:53.990Z",
+        "updated_at": "2023-09-28T06:25:40.086Z",
+        "expected_delivery_date": "2023-09-27T17:53:16.429Z",
+        "order_status": "Cancelled",
+        "delivery_notes": "Handle with care"
+      }
+    ],
+    "product_category": [
+      {
+        "id": "135cea05-2813-46e1-b296-14b7a063a87f",
+        "created_at": "2023-09-27T19:18:58.345Z",
+        "updated_at": "2023-09-27T15:25:44.915Z",
+        "description": "Electronics",
+        "category_code": "ELECT",
+        "category_image_url": "https://example.com/electronics.jpg"
+      },
+      {
+        "id": "ed8a5352-b02b-4b44-a112-13d22f34b4e5",
+        "created_at": "2023-09-28T05:12:49.065Z",
+        "updated_at": "2023-09-27T11:50:35.267Z",
+        "description": "Home Decor",
+        "category_code": "HOME",
+        "category_image_url": "https://example.com/homedecor.jpg"
+      },
+      {
+        "id": "5c000315-64f8-4f3c-ad77-37116387631c",
+        "created_at": "2023-09-27T09:15:45.985Z",
+        "updated_at": "2023-09-28T07:15:53.830Z",
+        "description": "Clothing",
+        "category_code": "CLOTH",
+        "category_image_url": "https://example.com/clothing.jpg"
+      },
+      {
+        "id": "943445d9-e17f-4378-9a5c-9fb081910157",
+        "created_at": "2023-09-27T08:49:37.194Z",
+        "updated_at": "2023-09-27T08:10:29.981Z",
+        "description": "Beauty",
+        "category_code": "BEAUTY",
+        "category_image_url": "https://example.com/beauty.jpg"
+      },
+      {
+        "id": "9ffd5d29-da4a-420d-bf16-dcf9d501be86",
+        "created_at": "2023-09-27T15:08:06.788Z",
+        "updated_at": "2023-09-27T18:33:24.019Z",
+        "description": "Sports",
+        "category_code": "SPORTS",
+        "category_image_url": "https://example.com/sports.jpg"
+      }
+    ],
+    "product": [
+      {
+        "id": "5ff8b333-5c89-4ec9-9df3-8f9af97b333f",
+        "created_at": "2023-09-27T13:43:01.012Z",
+        "updated_at": "2023-09-27T21:41:01.162Z",
+        "product_description": "Smartphone",
+        "product_weight": 0.7865436195861548,
+        "product_dimensions": "5.7 x 2.8 x 0.3 inches",
+        "product_material": "Plastic",
+        "product_color": "Black",
+        "product_category": "Electronics",
+        "product_manufacturer": "Apple",
+        "product_price": 0.30407827137969434
+      },
+      {
+        "id": "c4dfc503-7ab2-4d65-9806-c58a289420a3",
+        "created_at": "2023-09-27T23:00:13.532Z",
+        "updated_at": "2023-09-28T02:34:36.068Z",
+        "product_description": "Table Lamp",
+        "product_weight": 0.8293331798631698,
+        "product_dimensions": "14.5 x 7.5 x 7.5 inches",
+        "product_material": "Metal",
+        "product_color": "White",
+        "product_category": "Home Decor",
+        "product_manufacturer": "IKEA",
+        "product_price": 0.28972861426882446
+      },
+      {
+        "id": "ba0ae559-899d-45f1-a9c2-c362138eb172",
+        "created_at": "2023-09-27T21:04:26.069Z",
+        "updated_at": "2023-09-27T08:43:31.400Z",
+        "product_description": "T-Shirt",
+        "product_weight": 0.12995310546830297,
+        "product_dimensions": "10.5 x 8.5 x 0.5 inches",
+        "product_material": "Cotton",
+        "product_color": "Blue",
+        "product_category": "Clothing",
+        "product_manufacturer": "Nike",
+        "product_price": 0.7654210573527962
+      },
+      {
+        "id": "31a103f8-4c68-482b-9e03-0e87375b8ce5",
+        "created_at": "2023-09-27T08:35:44.200Z",
+        "updated_at": "2023-09-27T10:52:07.223Z",
+        "product_description": "Lipstick",
+        "product_weight": 0.6146780357230455,
+        "product_dimensions": "3.5 x 0.8 x 0.8 inches",
+        "product_material": "Cosmetics",
+        "product_color": "Red",
+        "product_category": "Beauty",
+        "product_manufacturer": "L'Oreal",
+        "product_price": 0.21428220276720822
+      },
+      {
+        "id": "0cf546cb-edec-4ab6-b95f-758d209b81dc",
+        "created_at": "2023-09-27T09:24:50.894Z",
+        "updated_at": "2023-09-27T08:46:23.669Z",
+        "product_description": "Yoga Mat",
+        "product_weight": 0.2948682939168066,
+        "product_dimensions": "72 x 24 x 0.25 inches",
+        "product_material": "Rubber",
+        "product_color": "Green",
+        "product_category": "Sports",
+        "product_manufacturer": "Manduka",
+        "product_price": 0.8915179572068155
+      }
+    ],
+    "order": [
+      {
+        "id": "c53f6f25-0171-4ee6-a138-de17d8ec91c3",
+        "created_at": "2023-09-27T15:19:53.379Z",
+        "updated_at": "2023-09-28T07:23:41.295Z",
+        "order_status": "Pending",
+        "delivery_date": "2023-09-28T01:24:23.474Z",
+        "estimated_delivery_date": "2023-09-27T20:50:18.234Z",
+        "order_tracking_number": "123456789",
+        "order_priority": "High"
+      },
+      {
+        "id": "d8b319cd-de8c-448c-9a2c-e59483456053",
+        "created_at": "2023-09-28T06:31:12.260Z",
+        "updated_at": "2023-09-28T02:40:28.834Z",
+        "order_status": "Processing",
+        "delivery_date": "2023-09-27T21:15:34.845Z",
+        "estimated_delivery_date": "2023-09-27T12:35:06.581Z",
+        "order_tracking_number": "987654321",
+        "order_priority": "Medium"
+      },
+      {
+        "id": "a664f0da-c95d-431a-a645-e72e9f03323f",
+        "created_at": "2023-09-28T02:00:26.993Z",
+        "updated_at": "2023-09-28T00:26:28.417Z",
+        "order_status": "Shipped",
+        "delivery_date": "2023-09-28T06:34:38.725Z",
+        "estimated_delivery_date": "2023-09-27T08:27:45.021Z",
+        "order_tracking_number": "456789123",
+        "order_priority": "Low"
+      },
+      {
+        "id": "bbbe30ea-542a-4557-af6d-329ef03c78fa",
+        "created_at": "2023-09-27T14:38:48.486Z",
+        "updated_at": "2023-09-27T18:53:38.855Z",
+        "order_status": "Delivered",
+        "delivery_date": "2023-09-28T06:04:44.385Z",
+        "estimated_delivery_date": "2023-09-28T00:28:42.307Z",
+        "order_tracking_number": "321654987",
+        "order_priority": "Urgent"
+      },
+      {
+        "id": "13eb4c4b-41a2-4571-bb05-6c0d20b89f42",
+        "created_at": "2023-09-27T11:47:41.547Z",
+        "updated_at": "2023-09-27T23:34:14.073Z",
+        "order_status": "Cancelled",
+        "delivery_date": "2023-09-27T12:04:18.704Z",
+        "estimated_delivery_date": "2023-09-27T18:14:22.212Z",
+        "order_tracking_number": "789123456",
+        "order_priority": "Normal"
+      }
+    ],
+    "inventory": [
+      {
+        "id": "411afbe4-dae5-4389-8c53-460043619170",
+        "created_at": "2023-09-27T13:36:35.234Z",
+        "updated_at": "2023-09-27T23:10:18.598Z",
+        "last_checked": "2023-09-27T18:23:49.441Z",
+        "last_updated": "2023-09-27T22:36:17.907Z",
+        "quantity_on_hand": 14684,
+        "expiration_date": "2023-09-28T01:27:39.029Z",
+        "reorder_threshold": 240
+      },
+      {
+        "id": "9815ba44-e3ff-432d-8b1c-e8879ab73007",
+        "created_at": "2023-09-27T16:41:37.165Z",
+        "updated_at": "2023-09-28T03:46:44.746Z",
+        "last_checked": "2023-09-27T18:55:10.507Z",
+        "last_updated": "2023-09-27T21:37:42.726Z",
+        "quantity_on_hand": 42302,
+        "expiration_date": "2023-09-27T18:04:02.718Z",
+        "reorder_threshold": 41789
+      },
+      {
+        "id": "7fd38a2c-0b84-4b5e-bcfb-0d1efee54e2a",
+        "created_at": "2023-09-28T00:26:50.762Z",
+        "updated_at": "2023-09-27T09:04:39.904Z",
+        "last_checked": "2023-09-27T09:18:49.425Z",
+        "last_updated": "2023-09-28T01:19:10.814Z",
+        "quantity_on_hand": 61739,
+        "expiration_date": "2023-09-27T22:27:47.921Z",
+        "reorder_threshold": 54631
+      },
+      {
+        "id": "8a711273-78f6-4edb-a4f3-62454af64978",
+        "created_at": "2023-09-27T14:22:44.465Z",
+        "updated_at": "2023-09-27T08:52:49.837Z",
+        "last_checked": "2023-09-27T17:47:09.704Z",
+        "last_updated": "2023-09-27T11:41:14.356Z",
+        "quantity_on_hand": 10853,
+        "expiration_date": "2023-09-27T11:04:12.998Z",
+        "reorder_threshold": 89511
+      },
+      {
+        "id": "a1b00838-35a7-49c2-8abf-1dbc653cdc55",
+        "created_at": "2023-09-27T13:09:40.069Z",
+        "updated_at": "2023-09-27T08:32:29.212Z",
+        "last_checked": "2023-09-27T12:16:06.741Z",
+        "last_updated": "2023-09-27T10:58:55.374Z",
+        "quantity_on_hand": 57655,
+        "expiration_date": "2023-09-27T11:35:55.508Z",
+        "reorder_threshold": 90783
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "00c76d6d-5da9-4610-bc6d-cf00675634ef",
+        "email": "Yasmin_Schumm83@roq.tech",
+        "firstName": "Hyman",
+        "lastName": "Nikolaus",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/866.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "c6ca31ec-f57a-4a6f-b308-8889c5957ae3",
+        "email": "Coleman4@roq.tech",
+        "firstName": "Cale",
+        "lastName": "Rowe",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/58119752",
+        "tenantId": null
+      },
+      {
+        "reference": "3404717b-386a-46c2-88d0-9db1f4bdd72d",
+        "email": "Chelsey.Schneider72@roq.tech",
+        "firstName": "Christine",
+        "lastName": "Cormier",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/43448991",
+        "tenantId": null
+      },
+      {
+        "reference": "e7c9225f-3370-4d88-9272-61bb0194eb4b",
+        "email": "Aubrey_Schroeder34@roq.tech",
+        "firstName": "Dennis",
+        "lastName": "Jakubowski",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/465.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "622f86e3-f771-4865-8381-8c60aebad0cc",
+        "email": "Makenna45@roq.tech",
+        "firstName": "Myah",
+        "lastName": "Schinner",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/62693073",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "warehouse": [
+      {
+        "id": "9562620f-7c49-4d1e-b399-1bcc1da6894b",
+        "created_at": "2023-09-27T08:26:24.619Z",
+        "updated_at": "2023-09-28T06:08:43.603Z",
+        "location": "New York",
+        "capacity": 4753,
+        "warehouse_type": "Distribution Center",
+        "operational_hours": "8:00 AM - 5:00 PM"
+      },
+      {
+        "id": "5b360fd7-f512-44f7-bc94-a11d92cc9c6d",
+        "created_at": "2023-09-27T08:55:12.856Z",
+        "updated_at": "2023-09-27T21:32:07.031Z",
+        "location": "Los Angeles",
+        "capacity": 25670,
+        "warehouse_type": "Fulfillment Center",
+        "operational_hours": "9:00 AM - 6:00 PM"
+      },
+      {
+        "id": "9a92c6a9-cc3e-4759-a7b7-128a1c71c170",
+        "created_at": "2023-09-27T10:43:26.072Z",
+        "updated_at": "2023-09-27T08:04:16.110Z",
+        "location": "Chicago",
+        "capacity": 63959,
+        "warehouse_type": "Cold Storage",
+        "operational_hours": "10:00 AM - 7:00 PM"
+      },
+      {
+        "id": "30a79b52-0054-47ab-a78b-f6020c187565",
+        "created_at": "2023-09-27T16:24:33.483Z",
+        "updated_at": "2023-09-28T03:19:41.935Z",
+        "location": "Houston",
+        "capacity": 15004,
+        "warehouse_type": "Consolidation Warehouse",
+        "operational_hours": "7:00 AM - 4:00 PM"
+      },
+      {
+        "id": "55be0570-e7f8-4585-90c3-b68a89da17a1",
+        "created_at": "2023-09-27T18:09:41.875Z",
+        "updated_at": "2023-09-27T10:14:03.911Z",
+        "location": "Miami",
+        "capacity": 53632,
+        "warehouse_type": "Cross-Dock Facility",
+        "operational_hours": "6:00 AM - 3:00 PM"
+      }
+    ],
+    "shipment": [
+      {
+        "id": "55afe583-4c1e-4303-9ee0-c54855228382",
+        "created_at": "2023-09-27T09:25:11.374Z",
+        "updated_at": "2023-09-27T12:34:16.883Z",
+        "estimated_delivery_date": "2023-09-27T22:13:42.408Z",
+        "tracking_number": "123456789",
+        "shipment_status": "In Transit",
+        "carrier_name": "UPS",
+        "shipment_cost": 0.797616989351809
+      },
+      {
+        "id": "8fbb3396-51e8-4204-a16f-75aafd4e11c2",
+        "created_at": "2023-09-27T14:02:09.490Z",
+        "updated_at": "2023-09-28T01:42:05.365Z",
+        "estimated_delivery_date": "2023-09-27T12:00:02.150Z",
+        "tracking_number": "987654321",
+        "shipment_status": "Delivered",
+        "carrier_name": "FedEx",
+        "shipment_cost": 0.6441144242417067
+      },
+      {
+        "id": "ac162ba3-692d-4144-aad4-c26cf6a8ed3f",
+        "created_at": "2023-09-27T08:21:40.447Z",
+        "updated_at": "2023-09-27T09:58:49.206Z",
+        "estimated_delivery_date": "2023-09-27T20:51:01.366Z",
+        "tracking_number": "456789123",
+        "shipment_status": "Out for Delivery",
+        "carrier_name": "DHL",
+        "shipment_cost": 0.828784970799461
+      },
+      {
+        "id": "2d01cc1d-bcc2-4f88-92be-ad6d5a605fce",
+        "created_at": "2023-09-28T02:41:21.211Z",
+        "updated_at": "2023-09-28T05:25:50.713Z",
+        "estimated_delivery_date": "2023-09-27T08:12:54.586Z",
+        "tracking_number": "321654987",
+        "shipment_status": "Arrived at Destination",
+        "carrier_name": "USPS",
+        "shipment_cost": 0.13135254429653287
+      },
+      {
+        "id": "2e3e9908-1f8b-46f1-8513-f2fa8dabd298",
+        "created_at": "2023-09-28T03:54:08.630Z",
+        "updated_at": "2023-09-28T00:56:35.623Z",
+        "estimated_delivery_date": "2023-09-27T08:23:54.151Z",
+        "tracking_number": "789123456",
+        "shipment_status": "Customs Clearance",
+        "carrier_name": "Amazon Logistics",
+        "shipment_cost": 0.29673939337953925
+      }
+    ],
+    "purchase_order": [
+      {
+        "id": "56d8eb21-3aa6-4ac6-933b-e45cf6ef62bd",
+        "created_at": "2023-09-27T17:23:25.521Z",
+        "updated_at": "2023-09-27T20:05:27.177Z",
+        "expected_delivery_date": "2023-09-28T06:12:44.620Z",
+        "order_status": "Pending",
+        "delivery_notes": "Leave at front door"
+      },
+      {
+        "id": "f36a868a-3fad-421b-beb0-91b72299df0b",
+        "created_at": "2023-09-28T01:08:41.520Z",
+        "updated_at": "2023-09-27T08:27:18.899Z",
+        "expected_delivery_date": "2023-09-28T06:24:00.920Z",
+        "order_status": "Processing",
+        "delivery_notes": "Call upon arrival"
+      },
+      {
+        "id": "f90f1237-2907-4797-9634-5842fbab50db",
+        "created_at": "2023-09-27T10:20:39.123Z",
+        "updated_at": "2023-09-28T07:01:17.887Z",
+        "expected_delivery_date": "2023-09-27T11:55:31.933Z",
+        "order_status": "Shipped",
+        "delivery_notes": "Signature required"
+      },
+      {
+        "id": "98860cc6-347a-4448-851f-a22bf63ce08c",
+        "created_at": "2023-09-27T20:33:38.196Z",
+        "updated_at": "2023-09-27T19:13:36.859Z",
+        "expected_delivery_date": "2023-09-27T12:42:58.578Z",
+        "order_status": "Delivered",
+        "delivery_notes": "Fragile items"
+      },
+      {
+        "id": "b98d8e0f-cbd0-4b4f-9c84-cd1851208162",
+        "created_at": "2023-09-27T16:03:32.973Z",
+        "updated_at": "2023-09-27T13:15:44.145Z",
+        "expected_delivery_date": "2023-09-28T02:16:33.694Z",
+        "order_status": "Cancelled",
+        "delivery_notes": "Handle with care"
+      }
+    ],
+    "product_category": [
+      {
+        "id": "45a2cc5f-f305-45e6-88ea-e24c75394d7f",
+        "created_at": "2023-09-28T04:57:48.458Z",
+        "updated_at": "2023-09-27T17:37:33.271Z",
+        "description": "Electronics",
+        "category_code": "ELE",
+        "category_image_url": "https://example.com/electronics.jpg"
+      },
+      {
+        "id": "ca7bf14d-7905-4be5-96d0-d0ec1ef48624",
+        "created_at": "2023-09-27T18:00:21.947Z",
+        "updated_at": "2023-09-27T11:10:18.565Z",
+        "description": "Clothing",
+        "category_code": "CLT",
+        "category_image_url": "https://example.com/clothing.jpg"
+      },
+      {
+        "id": "f8ac1836-03aa-41bc-9aa7-de59b32821bb",
+        "created_at": "2023-09-27T21:34:40.112Z",
+        "updated_at": "2023-09-27T14:43:20.102Z",
+        "description": "Home Decor",
+        "category_code": "HMD",
+        "category_image_url": "https://example.com/homedecor.jpg"
+      },
+      {
+        "id": "f1b33dc5-4f8d-4e94-8409-02a2afa176a1",
+        "created_at": "2023-09-27T14:29:24.729Z",
+        "updated_at": "2023-09-27T15:55:59.372Z",
+        "description": "Sports Equipment",
+        "category_code": "SPT",
+        "category_image_url": "https://example.com/sportsequipment.jpg"
+      },
+      {
+        "id": "96ac5609-a38c-40c3-8129-0a9bbd2cd6e1",
+        "created_at": "2023-09-27T23:54:03.667Z",
+        "updated_at": "2023-09-27T17:06:11.994Z",
+        "description": "Beauty Products",
+        "category_code": "BTP",
+        "category_image_url": "https://example.com/beautyproducts.jpg"
+      }
+    ],
+    "product": [
+      {
+        "id": "3d02be51-7763-4012-a8d7-39ec62da193e",
+        "created_at": "2023-09-27T11:06:05.667Z",
+        "updated_at": "2023-09-28T03:12:06.930Z",
+        "product_description": "Smartphone",
+        "product_weight": 0.05877121374942362,
+        "product_dimensions": "5.7 x 2.8 x 0.3 inches",
+        "product_material": "Glass, Metal",
+        "product_color": "Black",
+        "product_category": "Electronics",
+        "product_manufacturer": "Apple",
+        "product_price": 0.7746622085105628
+      },
+      {
+        "id": "8527c061-117c-4cc4-8d95-8a007bcc425e",
+        "created_at": "2023-09-28T01:11:37.310Z",
+        "updated_at": "2023-09-27T10:21:53.404Z",
+        "product_description": "T-Shirt",
+        "product_weight": 0.4783669328317046,
+        "product_dimensions": "S, M, L, XL, XXL",
+        "product_material": "Cotton",
+        "product_color": "White",
+        "product_category": "Clothing",
+        "product_manufacturer": "Nike",
+        "product_price": 0.08763989387080073
+      },
+      {
+        "id": "c8d30520-50b3-4c15-9b13-c22dadb6107c",
+        "created_at": "2023-09-27T08:09:23.957Z",
+        "updated_at": "2023-09-27T10:42:10.711Z",
+        "product_description": "Throw Pillow",
+        "product_weight": 0.8241275725886226,
+        "product_dimensions": "16 x 16 inches",
+        "product_material": "Polyester, Cotton",
+        "product_color": "Blue",
+        "product_category": "Home Decor",
+        "product_manufacturer": "IKEA",
+        "product_price": 0.8804389096330851
+      },
+      {
+        "id": "023bb11d-5572-46dd-8b13-21967df139cc",
+        "created_at": "2023-09-27T16:18:11.693Z",
+        "updated_at": "2023-09-27T23:38:49.300Z",
+        "product_description": "Tennis Racket",
+        "product_weight": 0.30495326360687613,
+        "product_dimensions": "27 x 12 x 1 inches",
+        "product_material": "Graphite, Aluminum",
+        "product_color": "Red",
+        "product_category": "Sports Equipment",
+        "product_manufacturer": "Wilson",
+        "product_price": 0.9664150478783995
+      },
+      {
+        "id": "43d3bc10-bad4-47c7-83d1-4366e6b20db2",
+        "created_at": "2023-09-27T10:08:07.677Z",
+        "updated_at": "2023-09-27T13:37:49.334Z",
+        "product_description": "Mascara",
+        "product_weight": 0.7377681005746126,
+        "product_dimensions": "0.3 fl oz",
+        "product_material": "Water, Iron Oxides",
+        "product_color": "Pink",
+        "product_category": "Beauty Products",
+        "product_manufacturer": "Maybelline",
+        "product_price": 0.0549861139152199
+      }
+    ],
+    "order": [
+      {
+        "id": "f632217d-4256-42b2-a525-791acc0cbff9",
+        "created_at": "2023-09-27T21:15:31.369Z",
+        "updated_at": "2023-09-27T14:12:30.499Z",
+        "order_status": "Pending",
+        "delivery_date": "2023-09-27T08:47:10.748Z",
+        "estimated_delivery_date": "2023-09-28T02:55:10.254Z",
+        "order_tracking_number": "123456789",
+        "order_priority": "High"
+      },
+      {
+        "id": "3ed60a53-52c8-4737-9279-457552393eb3",
+        "created_at": "2023-09-27T21:15:02.640Z",
+        "updated_at": "2023-09-28T02:22:32.490Z",
+        "order_status": "Processing",
+        "delivery_date": "2023-09-28T01:01:39.728Z",
+        "estimated_delivery_date": "2023-09-28T06:41:11.044Z",
+        "order_tracking_number": "987654321",
+        "order_priority": "Medium"
+      },
+      {
+        "id": "56ce6705-ff51-4180-b401-a24d352579d2",
+        "created_at": "2023-09-27T19:35:36.015Z",
+        "updated_at": "2023-09-27T15:33:32.333Z",
+        "order_status": "Shipped",
+        "delivery_date": "2023-09-27T17:23:01.969Z",
+        "estimated_delivery_date": "2023-09-28T06:14:43.164Z",
+        "order_tracking_number": "456789123",
+        "order_priority": "Low"
+      },
+      {
+        "id": "bf177bec-ccaf-4ddb-92e9-6ccbcb3ee29f",
+        "created_at": "2023-09-27T17:50:13.594Z",
+        "updated_at": "2023-09-27T08:58:23.258Z",
+        "order_status": "Delivered",
+        "delivery_date": "2023-09-27T17:52:25.659Z",
+        "estimated_delivery_date": "2023-09-28T00:27:38.152Z",
+        "order_tracking_number": "321654987",
+        "order_priority": "Urgent"
+      },
+      {
+        "id": "5eb0acfd-abd6-4368-97b6-3336afbda27a",
+        "created_at": "2023-09-28T01:13:31.985Z",
+        "updated_at": "2023-09-28T05:09:11.975Z",
+        "order_status": "Cancelled",
+        "delivery_date": "2023-09-27T17:03:32.632Z",
+        "estimated_delivery_date": "2023-09-27T18:15:27.937Z",
+        "order_tracking_number": "789123456",
+        "order_priority": "Normal"
+      }
+    ],
+    "inventory": [
+      {
+        "id": "13e0ced2-d2eb-49c6-8627-1fc068710f73",
+        "created_at": "2023-09-27T20:50:45.928Z",
+        "updated_at": "2023-09-28T01:18:15.587Z",
+        "last_checked": "2023-09-27T16:58:05.889Z",
+        "last_updated": "2023-09-27T09:36:06.583Z",
+        "quantity_on_hand": 36171,
+        "expiration_date": "2023-09-28T02:00:39.547Z",
+        "reorder_threshold": 71971
+      },
+      {
+        "id": "71f59fe9-0f7e-40c8-91b2-8c0ecb286b1b",
+        "created_at": "2023-09-28T01:13:52.201Z",
+        "updated_at": "2023-09-27T20:34:21.277Z",
+        "last_checked": "2023-09-27T16:48:37.996Z",
+        "last_updated": "2023-09-27T15:13:10.854Z",
+        "quantity_on_hand": 69949,
+        "expiration_date": "2023-09-27T22:21:50.877Z",
+        "reorder_threshold": 47071
+      },
+      {
+        "id": "65c430db-a217-4a39-a266-3462436711a1",
+        "created_at": "2023-09-27T12:57:19.178Z",
+        "updated_at": "2023-09-27T15:36:17.323Z",
+        "last_checked": "2023-09-27T19:25:24.007Z",
+        "last_updated": "2023-09-27T16:31:10.730Z",
+        "quantity_on_hand": 94016,
+        "expiration_date": "2023-09-28T03:30:09.999Z",
+        "reorder_threshold": 41133
+      },
+      {
+        "id": "2a49e269-b348-4ba1-b736-8584178e6751",
+        "created_at": "2023-09-27T20:55:27.423Z",
+        "updated_at": "2023-09-27T11:02:40.200Z",
+        "last_checked": "2023-09-28T01:34:48.099Z",
+        "last_updated": "2023-09-28T07:07:36.847Z",
+        "quantity_on_hand": 64264,
+        "expiration_date": "2023-09-27T23:51:13.033Z",
+        "reorder_threshold": 75314
+      },
+      {
+        "id": "8f08edd3-900a-4c54-b041-05fb04e42845",
+        "created_at": "2023-09-28T01:58:11.379Z",
+        "updated_at": "2023-09-28T06:44:44.277Z",
+        "last_checked": "2023-09-27T22:16:07.873Z",
+        "last_updated": "2023-09-28T03:36:39.847Z",
+        "quantity_on_hand": 99883,
+        "expiration_date": "2023-09-27T14:40:00.346Z",
+        "reorder_threshold": 42710
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "28325a63-8865-4b70-8d9a-e3fff42e71ab",
+        "email": "Elenor.Gerhold76@roq.tech",
+        "firstName": "Joesph",
+        "lastName": "Mann",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/62294783",
+        "tenantId": null
+      },
+      {
+        "reference": "75bea6d5-9dc1-4adb-a435-b4893bf7b7e5",
+        "email": "Annamae.Schaden@roq.tech",
+        "firstName": "Holden",
+        "lastName": "Bailey",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/96927411",
+        "tenantId": null
+      },
+      {
+        "reference": "08f7f0e6-1665-4947-a3a4-862e6a711b1b",
+        "email": "Erich60@roq.tech",
+        "firstName": "Ole",
+        "lastName": "Will",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/381.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "ff4c779e-401e-4029-b742-d8e9aa167838",
+        "email": "Alan.Shields71@roq.tech",
+        "firstName": "Gillian",
+        "lastName": "Mann",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/79803054",
+        "tenantId": null
+      },
+      {
+        "reference": "5c404e9f-92c8-41ac-b8ed-f6dd24e06ee4",
+        "email": "Wilbert_Ledner@roq.tech",
+        "firstName": "Oda",
+        "lastName": "Wisozk",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/671.jpg",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "warehouse": [
+      {
+        "id": "81e14cc1-6a80-40d4-b546-73af6c2d1588",
+        "created_at": "2023-09-28T02:31:47.071Z",
+        "updated_at": "2023-09-27T19:02:04.167Z",
+        "location": "New York",
+        "capacity": 89643,
+        "warehouse_type": "Distribution Center",
+        "operational_hours": "8:00 AM - 5:00 PM"
+      },
+      {
+        "id": "9100e092-e658-4e33-aa0d-2763a25a03b5",
+        "created_at": "2023-09-27T22:19:08.826Z",
+        "updated_at": "2023-09-27T15:04:34.986Z",
+        "location": "Los Angeles",
+        "capacity": 47298,
+        "warehouse_type": "Fulfillment Center",
+        "operational_hours": "9:00 AM - 6:00 PM"
+      },
+      {
+        "id": "bbc31e61-2637-4403-92d8-f073e8cb7b7a",
+        "created_at": "2023-09-28T00:08:05.934Z",
+        "updated_at": "2023-09-28T00:40:07.824Z",
+        "location": "Chicago",
+        "capacity": 43661,
+        "warehouse_type": "Regional Warehouse",
+        "operational_hours": "10:00 AM - 7:00 PM"
+      },
+      {
+        "id": "4839c516-1851-44a8-ba2c-87669aaf1dbc",
+        "created_at": "2023-09-28T00:52:20.832Z",
+        "updated_at": "2023-09-27T22:05:00.239Z",
+        "location": "Houston",
+        "capacity": 26001,
+        "warehouse_type": "Cold Storage",
+        "operational_hours": "7:00 AM - 4:00 PM"
+      },
+      {
+        "id": "5b4692e2-be1f-43d9-861b-ed38f24115f3",
+        "created_at": "2023-09-28T01:58:54.277Z",
+        "updated_at": "2023-09-27T19:58:25.023Z",
+        "location": "Miami",
+        "capacity": 67970,
+        "warehouse_type": "Cross-Dock Facility",
+        "operational_hours": "6:00 AM - 3:00 PM"
+      }
+    ],
+    "shipment": [
+      {
+        "id": "bc71531c-56ac-4e7f-9bb8-eac3d58dea4a",
+        "created_at": "2023-09-28T05:40:19.658Z",
+        "updated_at": "2023-09-27T11:39:37.391Z",
+        "estimated_delivery_date": "2023-09-27T14:47:27.203Z",
+        "tracking_number": "123456789",
+        "shipment_status": "In Transit",
+        "carrier_name": "UPS",
+        "shipment_cost": 0.6053873819764704
+      },
+      {
+        "id": "ee1f6eb6-db10-47f6-a942-79de1db11e84",
+        "created_at": "2023-09-27T17:25:44.983Z",
+        "updated_at": "2023-09-27T11:30:01.124Z",
+        "estimated_delivery_date": "2023-09-27T23:17:31.622Z",
+        "tracking_number": "987654321",
+        "shipment_status": "Delivered",
+        "carrier_name": "FedEx",
+        "shipment_cost": 0.541787784313783
+      },
+      {
+        "id": "ce7798cd-ffce-4902-8071-79920c8157f9",
+        "created_at": "2023-09-28T01:50:35.237Z",
+        "updated_at": "2023-09-28T04:51:01.041Z",
+        "estimated_delivery_date": "2023-09-27T17:55:30.835Z",
+        "tracking_number": "456789123",
+        "shipment_status": "Out for Delivery",
+        "carrier_name": "DHL",
+        "shipment_cost": 0.28529911977238953
+      },
+      {
+        "id": "b678a88a-8343-4c99-a59b-b85e107df5d5",
+        "created_at": "2023-09-27T16:33:42.516Z",
+        "updated_at": "2023-09-27T14:26:23.355Z",
+        "estimated_delivery_date": "2023-09-27T19:36:33.809Z",
+        "tracking_number": "321654987",
+        "shipment_status": "Arrived at Destination",
+        "carrier_name": "USPS",
+        "shipment_cost": 0.319476067321375
+      },
+      {
+        "id": "bcfe13fd-a4c5-4fd4-9d49-610d037739c2",
+        "created_at": "2023-09-28T01:57:13.170Z",
+        "updated_at": "2023-09-27T19:26:14.555Z",
+        "estimated_delivery_date": "2023-09-28T07:22:48.156Z",
+        "tracking_number": "789123456",
+        "shipment_status": "In Customs",
+        "carrier_name": "Amazon Logistics",
+        "shipment_cost": 0.8868320300243795
+      }
+    ],
+    "purchase_order": [
+      {
+        "id": "0a6035d9-d5d4-4a45-9747-7c5886320451",
+        "created_at": "2023-09-28T02:22:41.668Z",
+        "updated_at": "2023-09-27T08:32:44.684Z",
+        "expected_delivery_date": "2023-09-28T06:30:26.809Z",
+        "order_status": "Pending",
+        "delivery_notes": "Leave at front door"
+      },
+      {
+        "id": "4be53fd9-2756-4b01-8176-397ab8074bdb",
+        "created_at": "2023-09-27T20:33:55.246Z",
+        "updated_at": "2023-09-27T13:55:53.405Z",
+        "expected_delivery_date": "2023-09-28T05:21:48.297Z",
+        "order_status": "Processing",
+        "delivery_notes": "Signature required"
+      },
+      {
+        "id": "1c957eaa-f38d-4153-979a-846057742182",
+        "created_at": "2023-09-28T06:55:50.589Z",
+        "updated_at": "2023-09-28T06:22:06.879Z",
+        "expected_delivery_date": "2023-09-27T11:43:43.776Z",
+        "order_status": "Shipped",
+        "delivery_notes": "Call before delivery"
+      },
+      {
+        "id": "18c8f838-2283-47bc-859b-8ccc6ccb5d9f",
+        "created_at": "2023-09-27T15:43:27.923Z",
+        "updated_at": "2023-09-27T11:19:31.144Z",
+        "expected_delivery_date": "2023-09-28T06:28:28.656Z",
+        "order_status": "Delivered",
+        "delivery_notes": "Do not deliver on weekends"
+      },
+      {
+        "id": "d4447993-e652-4e8b-9697-83bcadcf0e94",
+        "created_at": "2023-09-27T17:46:06.414Z",
+        "updated_at": "2023-09-28T00:12:29.259Z",
+        "expected_delivery_date": "2023-09-28T00:27:07.492Z",
+        "order_status": "Cancelled",
+        "delivery_notes": "Deliver to back entrance"
+      }
+    ],
+    "product_category": [
+      {
+        "id": "2633d53a-aa11-4f07-8e39-c0bc15ec3f02",
+        "created_at": "2023-09-28T02:01:24.290Z",
+        "updated_at": "2023-09-27T14:21:22.034Z",
+        "description": "Electronics",
+        "category_code": "ELECT",
+        "category_image_url": "https://example.com/electronics.jpg"
+      },
+      {
+        "id": "aa194fb5-3032-4e3b-bd24-5d4ca67f18ae",
+        "created_at": "2023-09-27T11:43:06.975Z",
+        "updated_at": "2023-09-27T10:38:35.200Z",
+        "description": "Home Decor",
+        "category_code": "HOME",
+        "category_image_url": "https://example.com/homedecor.jpg"
+      },
+      {
+        "id": "e14663b2-0f2b-4146-843b-0c9046753a1e",
+        "created_at": "2023-09-28T06:10:30.948Z",
+        "updated_at": "2023-09-28T01:38:35.974Z",
+        "description": "Clothing",
+        "category_code": "CLOTH",
+        "category_image_url": "https://example.com/clothing.jpg"
+      },
+      {
+        "id": "32b76828-69f3-47f5-8500-35ebb1b543db",
+        "created_at": "2023-09-28T06:06:58.347Z",
+        "updated_at": "2023-09-28T02:59:03.774Z",
+        "description": "Beauty",
+        "category_code": "BEAUTY",
+        "category_image_url": "https://example.com/beauty.jpg"
+      },
+      {
+        "id": "fb491459-f22b-4641-bfbb-f8bddd608655",
+        "created_at": "2023-09-27T21:21:14.257Z",
+        "updated_at": "2023-09-28T05:04:09.815Z",
+        "description": "Sports",
+        "category_code": "SPORT",
+        "category_image_url": "https://example.com/sports.jpg"
+      }
+    ],
+    "product": [
+      {
+        "id": "5bd659a2-6315-4a85-9f2d-6bce9758f717",
+        "created_at": "2023-09-27T09:02:53.710Z",
+        "updated_at": "2023-09-28T06:58:45.177Z",
+        "product_description": "Smartphone",
+        "product_weight": 0.3191019732039422,
+        "product_dimensions": "5.7\" x 2.8\" x 0.3\"",
+        "product_material": "Plastic",
+        "product_color": "Black",
+        "product_category": "Electronics",
+        "product_manufacturer": "Apple",
+        "product_price": 0.25230639637447894
+      },
+      {
+        "id": "78aaaeac-51bf-43ea-9021-e52b85912a27",
+        "created_at": "2023-09-27T08:46:31.424Z",
+        "updated_at": "2023-09-27T21:26:57.717Z",
+        "product_description": "Throw Pillow",
+        "product_weight": 0.31718336697667837,
+        "product_dimensions": "18\" x 18\"",
+        "product_material": "Cotton",
+        "product_color": "Blue",
+        "product_category": "Home Decor",
+        "product_manufacturer": "IKEA",
+        "product_price": 0.3053429746069014
+      },
+      {
+        "id": "b334a4af-b653-42b0-bd7a-2ea830a82380",
+        "created_at": "2023-09-28T00:45:47.556Z",
+        "updated_at": "2023-09-27T11:45:38.314Z",
+        "product_description": "T-Shirt",
+        "product_weight": 0.3675179041456431,
+        "product_dimensions": "S, M, L, XL",
+        "product_material": "Polyester",
+        "product_color": "Red",
+        "product_category": "Clothing",
+        "product_manufacturer": "Nike",
+        "product_price": 0.5038459748029709
+      },
+      {
+        "id": "cb5f0c0b-eca8-4fdd-8e33-d20837fce22e",
+        "created_at": "2023-09-27T23:50:59.448Z",
+        "updated_at": "2023-09-27T13:20:39.446Z",
+        "product_description": "Lipstick",
+        "product_weight": 0.2574551859870553,
+        "product_dimensions": "3.5\" x 0.5\"",
+        "product_material": "Lipstick",
+        "product_color": "Pink",
+        "product_category": "Beauty",
+        "product_manufacturer": "L'Oreal",
+        "product_price": 0.16432382655330002
+      },
+      {
+        "id": "a1cc701a-c124-4a3d-a394-4a65b6a4d658",
+        "created_at": "2023-09-27T12:34:31.445Z",
+        "updated_at": "2023-09-28T05:52:40.386Z",
+        "product_description": "Yoga Mat",
+        "product_weight": 0.4891597821842879,
+        "product_dimensions": "72\" x 24\"",
+        "product_material": "PVC",
+        "product_color": "Green",
+        "product_category": "Sports",
+        "product_manufacturer": "Manduka",
+        "product_price": 0.39539100765250623
+      }
+    ],
+    "order": [
+      {
+        "id": "747f6b4b-d86c-456f-a389-5eae3bd5a5e8",
+        "created_at": "2023-09-28T06:33:52.509Z",
+        "updated_at": "2023-09-27T22:31:24.236Z",
+        "order_status": "Pending",
+        "delivery_date": "2023-09-27T22:08:28.435Z",
+        "estimated_delivery_date": "2023-09-27T11:01:25.377Z",
+        "order_tracking_number": "123456789",
+        "order_priority": "High"
+      },
+      {
+        "id": "d9e65550-0c00-443e-a2ef-a5b4ae5627fe",
+        "created_at": "2023-09-28T01:23:21.697Z",
+        "updated_at": "2023-09-27T11:45:19.271Z",
+        "order_status": "Processing",
+        "delivery_date": "2023-09-28T04:22:24.417Z",
+        "estimated_delivery_date": "2023-09-27T19:54:41.708Z",
+        "order_tracking_number": "987654321",
+        "order_priority": "Medium"
+      },
+      {
+        "id": "6140ff96-e01f-4cda-8151-16eb64302aa6",
+        "created_at": "2023-09-27T15:00:30.195Z",
+        "updated_at": "2023-09-27T12:54:13.463Z",
+        "order_status": "Shipped",
+        "delivery_date": "2023-09-28T02:35:51.890Z",
+        "estimated_delivery_date": "2023-09-27T22:24:18.274Z",
+        "order_tracking_number": "456789123",
+        "order_priority": "Low"
+      },
+      {
+        "id": "aec725b8-b414-4510-9d48-547f13cda706",
+        "created_at": "2023-09-28T02:21:24.610Z",
+        "updated_at": "2023-09-27T21:16:56.406Z",
+        "order_status": "Delivered",
+        "delivery_date": "2023-09-27T15:28:41.628Z",
+        "estimated_delivery_date": "2023-09-28T00:58:10.622Z",
+        "order_tracking_number": "321654987",
+        "order_priority": "Urgent"
+      },
+      {
+        "id": "65c33555-6fee-459a-a986-526459cf501c",
+        "created_at": "2023-09-27T13:01:50.501Z",
+        "updated_at": "2023-09-27T22:55:30.545Z",
+        "order_status": "Cancelled",
+        "delivery_date": "2023-09-27T15:36:25.146Z",
+        "estimated_delivery_date": "2023-09-27T09:41:59.300Z",
+        "order_tracking_number": "789123456",
+        "order_priority": "Normal"
+      }
+    ],
+    "inventory": [
+      {
+        "id": "5094c9ae-514c-49ac-a256-d3fc33169017",
+        "created_at": "2023-09-28T03:40:02.652Z",
+        "updated_at": "2023-09-27T09:33:05.374Z",
+        "last_checked": "2023-09-27T22:34:28.591Z",
+        "last_updated": "2023-09-28T06:16:43.249Z",
+        "quantity_on_hand": 84872,
+        "expiration_date": "2023-09-27T12:02:15.188Z",
+        "reorder_threshold": 83603
+      },
+      {
+        "id": "77537b79-119d-4821-a551-747be12dc645",
+        "created_at": "2023-09-28T00:12:27.938Z",
+        "updated_at": "2023-09-27T21:34:13.934Z",
+        "last_checked": "2023-09-28T04:01:40.112Z",
+        "last_updated": "2023-09-27T08:15:39.604Z",
+        "quantity_on_hand": 99053,
+        "expiration_date": "2023-09-28T00:39:03.799Z",
+        "reorder_threshold": 50880
+      },
+      {
+        "id": "84e2b88b-b6d2-4aba-8579-ab593cec0c0f",
+        "created_at": "2023-09-27T12:19:15.156Z",
+        "updated_at": "2023-09-28T01:37:11.299Z",
+        "last_checked": "2023-09-28T02:25:17.767Z",
+        "last_updated": "2023-09-28T06:53:49.586Z",
+        "quantity_on_hand": 93164,
+        "expiration_date": "2023-09-27T21:13:45.578Z",
+        "reorder_threshold": 29043
+      },
+      {
+        "id": "e0b12994-c87b-4fc5-b558-aaf7474e4ea2",
+        "created_at": "2023-09-28T01:51:15.890Z",
+        "updated_at": "2023-09-28T07:48:32.623Z",
+        "last_checked": "2023-09-27T21:01:33.337Z",
+        "last_updated": "2023-09-27T09:36:43.610Z",
+        "quantity_on_hand": 33879,
+        "expiration_date": "2023-09-28T05:06:43.195Z",
+        "reorder_threshold": 11515
+      },
+      {
+        "id": "e22faf31-e2c2-4128-8735-13d7d1051068",
+        "created_at": "2023-09-27T19:19:50.117Z",
+        "updated_at": "2023-09-27T08:00:17.875Z",
+        "last_checked": "2023-09-27T11:51:13.679Z",
+        "last_updated": "2023-09-27T14:23:10.498Z",
+        "quantity_on_hand": 61003,
+        "expiration_date": "2023-09-27T19:14:18.689Z",
+        "reorder_threshold": 76931
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "02c31eea-5cea-46e0-8b88-8887e7195855",
+        "email": "Maurice_Hilpert-Kreiger8@roq.tech",
+        "firstName": "Trever",
+        "lastName": "Bosco",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/6272050",
+        "tenantId": null
+      },
+      {
+        "reference": "3c6c9b33-1cd3-436f-8c37-b1bab0bc8c04",
+        "email": "Angela.Hodkiewicz@roq.tech",
+        "firstName": "Arlene",
+        "lastName": "Koss",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/442.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "41eea53a-e5dd-4bad-a76a-7c1b02b3ddac",
+        "email": "Waino.Kub28@roq.tech",
+        "firstName": "Jules",
+        "lastName": "Sauer",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1073.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "d30d5d44-289a-4cbd-a23a-6b726501afa5",
+        "email": "Darius.Kautzer4@roq.tech",
+        "firstName": "Dan",
+        "lastName": "Bogisich",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/320.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "d23c1ca5-baa0-4959-a110-90e7abad82fc",
+        "email": "Justine67@roq.tech",
+        "firstName": "Rosalind",
+        "lastName": "Will",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/98780588",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "warehouse": [
+      {
+        "id": "3ddf4be1-e20c-4778-8a6e-c127594d8bf1",
+        "created_at": "2023-09-27T22:50:02.923Z",
+        "updated_at": "2023-09-27T23:47:56.393Z",
+        "location": "New York",
+        "capacity": 26770,
+        "warehouse_type": "Distribution Center",
+        "operational_hours": "8:00 AM - 5:00 PM"
+      },
+      {
+        "id": "24c1a825-6bb4-4da5-94d7-1c2b1f6d7500",
+        "created_at": "2023-09-27T13:52:16.999Z",
+        "updated_at": "2023-09-28T01:20:31.321Z",
+        "location": "Los Angeles",
+        "capacity": 27378,
+        "warehouse_type": "Fulfillment Center",
+        "operational_hours": "9:00 AM - 6:00 PM"
+      },
+      {
+        "id": "c25a8add-fe27-45d7-839f-be096d463733",
+        "created_at": "2023-09-27T07:57:45.320Z",
+        "updated_at": "2023-09-27T23:22:58.209Z",
+        "location": "Chicago",
+        "capacity": 75598,
+        "warehouse_type": "Cold Storage",
+        "operational_hours": "24/7"
+      },
+      {
+        "id": "8d9ba714-b1dc-4354-90b9-73825a944efc",
+        "created_at": "2023-09-27T18:58:45.679Z",
+        "updated_at": "2023-09-27T20:39:37.268Z",
+        "location": "Houston",
+        "capacity": 49774,
+        "warehouse_type": "Cross-Dock Facility",
+        "operational_hours": "7:00 AM - 4:00 PM"
+      },
+      {
+        "id": "8ff4fc2c-43ef-4847-9d3d-535fb9096567",
+        "created_at": "2023-09-28T02:11:10.585Z",
+        "updated_at": "2023-09-28T01:55:54.613Z",
+        "location": "Miami",
+        "capacity": 73855,
+        "warehouse_type": "Bonded Warehouse",
+        "operational_hours": "10:00 AM - 7:00 PM"
+      }
+    ],
+    "shipment": [
+      {
+        "id": "fda79053-df8a-418f-b403-bbd4018379ea",
+        "created_at": "2023-09-27T13:15:34.124Z",
+        "updated_at": "2023-09-27T23:44:28.099Z",
+        "estimated_delivery_date": "2023-09-27T19:22:22.728Z",
+        "tracking_number": "123456789",
+        "shipment_status": "In Transit",
+        "carrier_name": "UPS",
+        "shipment_cost": 0.4741006004624069
+      },
+      {
+        "id": "c45048ec-84af-4533-916b-342d0ba0e1fa",
+        "created_at": "2023-09-28T06:56:01.136Z",
+        "updated_at": "2023-09-28T04:04:32.029Z",
+        "estimated_delivery_date": "2023-09-27T20:38:53.590Z",
+        "tracking_number": "987654321",
+        "shipment_status": "Delivered",
+        "carrier_name": "FedEx",
+        "shipment_cost": 0.12337842676788568
+      },
+      {
+        "id": "1e1fe2b5-407e-49c0-bc84-4f636d41aa0b",
+        "created_at": "2023-09-27T13:39:48.218Z",
+        "updated_at": "2023-09-27T08:23:39.664Z",
+        "estimated_delivery_date": "2023-09-27T23:08:34.537Z",
+        "tracking_number": "456789123",
+        "shipment_status": "Out for Delivery",
+        "carrier_name": "DHL",
+        "shipment_cost": 0.060255785938352346
+      },
+      {
+        "id": "2a121e4f-3969-43e3-a56c-8d797728f539",
+        "created_at": "2023-09-27T22:29:50.852Z",
+        "updated_at": "2023-09-27T10:54:18.368Z",
+        "estimated_delivery_date": "2023-09-27T08:01:28.039Z",
+        "tracking_number": "321654987",
+        "shipment_status": "Arrived at Destination",
+        "carrier_name": "USPS",
+        "shipment_cost": 0.7103638572152704
+      },
+      {
+        "id": "15865fc3-0fd7-4670-980c-4f796fde7596",
+        "created_at": "2023-09-27T23:56:51.545Z",
+        "updated_at": "2023-09-27T16:41:46.367Z",
+        "estimated_delivery_date": "2023-09-28T02:49:58.035Z",
+        "tracking_number": "789123456",
+        "shipment_status": "Pending",
+        "carrier_name": "Amazon Logistics",
+        "shipment_cost": 0.02747066947631538
+      }
+    ],
+    "purchase_order": [
+      {
+        "id": "169cba9c-a6e6-4212-8ce0-7fd9445ce338",
+        "created_at": "2023-09-27T18:47:32.235Z",
+        "updated_at": "2023-09-27T09:44:07.055Z",
+        "expected_delivery_date": "2023-09-28T06:00:04.288Z",
+        "order_status": "Pending",
+        "delivery_notes": "Leave at front door"
+      },
+      {
+        "id": "6ac6d114-5d42-46ff-b3f5-95c299f6cf99",
+        "created_at": "2023-09-27T18:22:23.492Z",
+        "updated_at": "2023-09-27T15:45:11.406Z",
+        "expected_delivery_date": "2023-09-27T08:08:47.163Z",
+        "order_status": "In Progress",
+        "delivery_notes": "Call before delivery"
+      },
+      {
+        "id": "b607e750-8273-41f2-badb-3d79f882ae58",
+        "created_at": "2023-09-27T09:38:28.578Z",
+        "updated_at": "2023-09-28T06:42:29.850Z",
+        "expected_delivery_date": "2023-09-27T19:51:00.496Z",
+        "order_status": "Completed",
+        "delivery_notes": "Signature required"
+      },
+      {
+        "id": "60513c41-df22-4375-87bf-59b58ea2b2f2",
+        "created_at": "2023-09-28T06:47:56.412Z",
+        "updated_at": "2023-09-27T16:48:54.209Z",
+        "expected_delivery_date": "2023-09-27T22:02:59.083Z",
+        "order_status": "Cancelled",
+        "delivery_notes": "Deliver to back entrance"
+      },
+      {
+        "id": "8727a043-a7df-4000-9db1-2cf141ea8ece",
+        "created_at": "2023-09-27T14:10:44.687Z",
+        "updated_at": "2023-09-28T03:11:28.240Z",
+        "expected_delivery_date": "2023-09-28T04:17:43.709Z",
+        "order_status": "On Hold",
+        "delivery_notes": "Do not deliver on weekends"
+      }
+    ],
+    "product_category": [
+      {
+        "id": "cae104d7-9197-4221-ba26-24559868e163",
+        "created_at": "2023-09-27T17:57:34.434Z",
+        "updated_at": "2023-09-27T09:16:08.985Z",
+        "description": "Electronics",
+        "category_code": "ELE",
+        "category_image_url": "https://example.com/electronics.jpg"
+      },
+      {
+        "id": "259d776a-1c13-4321-a91c-63a36beb268a",
+        "created_at": "2023-09-27T08:34:53.223Z",
+        "updated_at": "2023-09-28T01:31:13.554Z",
+        "description": "Clothing",
+        "category_code": "CLT",
+        "category_image_url": "https://example.com/clothing.jpg"
+      },
+      {
+        "id": "6cd1936d-e2c0-4301-8e8e-5f5a5f36a924",
+        "created_at": "2023-09-28T05:08:31.416Z",
+        "updated_at": "2023-09-27T13:12:43.241Z",
+        "description": "Home Decor",
+        "category_code": "HMD",
+        "category_image_url": "https://example.com/homedecor.jpg"
+      },
+      {
+        "id": "ebde15dc-5dd0-4d2f-aac4-87fe37148d53",
+        "created_at": "2023-09-27T18:53:19.561Z",
+        "updated_at": "2023-09-27T16:00:24.486Z",
+        "description": "Beauty",
+        "category_code": "BTY",
+        "category_image_url": "https://example.com/beauty.jpg"
+      },
+      {
+        "id": "77d2c9b5-a4c9-4f1f-88c2-4a451b2bc10f",
+        "created_at": "2023-09-27T17:17:21.583Z",
+        "updated_at": "2023-09-28T04:06:00.126Z",
+        "description": "Sports",
+        "category_code": "SPR",
+        "category_image_url": "https://example.com/sports.jpg"
+      }
+    ],
+    "product": [
+      {
+        "id": "9f263400-34fe-428e-a81c-d29d972cf776",
+        "created_at": "2023-09-27T19:00:05.228Z",
+        "updated_at": "2023-09-28T00:27:10.839Z",
+        "product_description": "Smartphone",
+        "product_weight": 0.9295943339820951,
+        "product_dimensions": "5.7 x 2.8 x 0.3 inches",
+        "product_material": "Glass, Aluminum",
+        "product_color": "Black",
+        "product_category": "Electronics",
+        "product_manufacturer": "Apple",
+        "product_price": 0.5276483504567295
+      },
+      {
+        "id": "4a0f40c5-e174-43ae-b59c-10bfcf1358de",
+        "created_at": "2023-09-27T16:26:25.474Z",
+        "updated_at": "2023-09-27T10:46:04.595Z",
+        "product_description": "T-Shirt",
+        "product_weight": 0.1426091722678393,
+        "product_dimensions": "S, M, L, XL, XXL",
+        "product_material": "Cotton",
+        "product_color": "White",
+        "product_category": "Clothing",
+        "product_manufacturer": "Nike",
+        "product_price": 0.8277557510882616
+      },
+      {
+        "id": "be685e94-5c15-4d6f-a210-3c87c0f27ba1",
+        "created_at": "2023-09-27T13:27:37.458Z",
+        "updated_at": "2023-09-27T10:32:08.633Z",
+        "product_description": "Cushion Cover",
+        "product_weight": 0.4398563611321151,
+        "product_dimensions": "18 x 18 inches",
+        "product_material": "Polyester",
+        "product_color": "Blue",
+        "product_category": "Home Decor",
+        "product_manufacturer": "IKEA",
+        "product_price": 0.9494705654215068
+      },
+      {
+        "id": "03e56243-b24a-48e3-8280-118e55944e7c",
+        "created_at": "2023-09-28T00:48:19.026Z",
+        "updated_at": "2023-09-28T00:40:01.607Z",
+        "product_description": "Lipstick",
+        "product_weight": 0.576238558627665,
+        "product_dimensions": "0.12 oz",
+        "product_material": "Wax",
+        "product_color": "Red",
+        "product_category": "Beauty",
+        "product_manufacturer": "Maybelline",
+        "product_price": 0.4971073707565665
+      },
+      {
+        "id": "28132e89-3edb-499e-8d41-8a1dac9ec921",
+        "created_at": "2023-09-27T20:52:44.801Z",
+        "updated_at": "2023-09-28T04:10:07.054Z",
+        "product_description": "Yoga Mat",
+        "product_weight": 0.9406108488328755,
+        "product_dimensions": "72 x 24 inches",
+        "product_material": "PVC",
+        "product_color": "Green",
+        "product_category": "Sports",
+        "product_manufacturer": "Lululemon",
+        "product_price": 0.0189250314142555
+      }
+    ],
+    "order": [
+      {
+        "id": "d989e948-a7fe-4ab6-ae53-3636543a540c",
+        "created_at": "2023-09-28T03:01:33.979Z",
+        "updated_at": "2023-09-27T19:57:32.602Z",
+        "order_status": "Pending",
+        "delivery_date": "2023-09-27T12:54:21.335Z",
+        "estimated_delivery_date": "2023-09-27T19:40:39.191Z",
+        "order_tracking_number": "123456789",
+        "order_priority": "High"
+      },
+      {
+        "id": "e0cc67d0-7ecd-4fc9-bfde-cff3548b3d72",
+        "created_at": "2023-09-28T00:12:30.621Z",
+        "updated_at": "2023-09-27T23:35:45.963Z",
+        "order_status": "In Progress",
+        "delivery_date": "2023-09-27T09:58:47.232Z",
+        "estimated_delivery_date": "2023-09-27T10:28:46.279Z",
+        "order_tracking_number": "987654321",
+        "order_priority": "Medium"
+      },
+      {
+        "id": "b9b69560-64e7-448b-8d8f-eaa6d2f840c5",
+        "created_at": "2023-09-27T15:10:27.237Z",
+        "updated_at": "2023-09-27T08:02:18.984Z",
+        "order_status": "Completed",
+        "delivery_date": "2023-09-28T04:24:43.745Z",
+        "estimated_delivery_date": "2023-09-27T09:02:04.425Z",
+        "order_tracking_number": "456789123",
+        "order_priority": "Low"
+      },
+      {
+        "id": "def65fab-3af4-4acd-a565-ba3bb16cff7c",
+        "created_at": "2023-09-27T09:13:38.866Z",
+        "updated_at": "2023-09-27T20:37:42.775Z",
+        "order_status": "Cancelled",
+        "delivery_date": "2023-09-28T03:32:33.480Z",
+        "estimated_delivery_date": "2023-09-28T04:56:35.974Z",
+        "order_tracking_number": "321654987",
+        "order_priority": "Urgent"
+      },
+      {
+        "id": "ec766550-834e-43e6-b35f-b16a2a406409",
+        "created_at": "2023-09-28T01:49:16.153Z",
+        "updated_at": "2023-09-27T10:50:20.696Z",
+        "order_status": "On Hold",
+        "delivery_date": "2023-09-27T18:54:33.766Z",
+        "estimated_delivery_date": "2023-09-28T02:12:51.887Z",
+        "order_tracking_number": "789123456",
+        "order_priority": "Normal"
+      }
+    ],
+    "inventory": [
+      {
+        "id": "fe3a4735-59c5-47ba-b87f-6cbbeab1d04d",
+        "created_at": "2023-09-27T18:44:26.105Z",
+        "updated_at": "2023-09-27T15:58:04.142Z",
+        "last_checked": "2023-09-28T03:26:33.886Z",
+        "last_updated": "2023-09-27T11:54:43.520Z",
+        "quantity_on_hand": 15384,
+        "expiration_date": "2023-09-27T13:54:27.812Z",
+        "reorder_threshold": 5471
+      },
+      {
+        "id": "26be53b7-02f5-48f1-b66a-9d785fa797d8",
+        "created_at": "2023-09-28T05:32:13.203Z",
+        "updated_at": "2023-09-28T04:05:35.863Z",
+        "last_checked": "2023-09-27T23:33:52.556Z",
+        "last_updated": "2023-09-27T10:13:46.574Z",
+        "quantity_on_hand": 48272,
+        "expiration_date": "2023-09-28T04:05:12.833Z",
+        "reorder_threshold": 82669
+      },
+      {
+        "id": "9e46169e-d858-4336-84a5-0b5fb89ee6de",
+        "created_at": "2023-09-27T09:42:27.510Z",
+        "updated_at": "2023-09-28T02:57:45.931Z",
+        "last_checked": "2023-09-27T20:29:01.150Z",
+        "last_updated": "2023-09-27T08:24:39.700Z",
+        "quantity_on_hand": 58005,
+        "expiration_date": "2023-09-28T06:37:53.040Z",
+        "reorder_threshold": 23478
+      },
+      {
+        "id": "7eafa748-f446-4ebd-a535-4c907582c109",
+        "created_at": "2023-09-27T12:44:40.178Z",
+        "updated_at": "2023-09-27T23:10:40.620Z",
+        "last_checked": "2023-09-27T17:13:42.906Z",
+        "last_updated": "2023-09-27T11:38:56.183Z",
+        "quantity_on_hand": 70170,
+        "expiration_date": "2023-09-28T02:26:38.956Z",
+        "reorder_threshold": 90787
+      },
+      {
+        "id": "b7b743b2-18d6-4ca1-8cce-2690205e82d8",
+        "created_at": "2023-09-27T18:16:43.661Z",
+        "updated_at": "2023-09-28T04:48:32.646Z",
+        "last_checked": "2023-09-27T19:53:57.756Z",
+        "last_updated": "2023-09-27T09:56:42.774Z",
+        "quantity_on_hand": 4185,
+        "expiration_date": "2023-09-27T10:40:26.436Z",
+        "reorder_threshold": 50259
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "ada4582f-4b73-4406-bf5b-f11aaf0e0fc2",
+        "email": "Anita_Larkin46@roq.tech",
+        "firstName": "Isabella",
+        "lastName": "Rutherford",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1135.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "70b64608-251c-423e-9ac2-d3f9f8bee66d",
+        "email": "Toby.Morar55@roq.tech",
+        "firstName": "Halie",
+        "lastName": "Cummings",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/34134892",
+        "tenantId": null
+      },
+      {
+        "reference": "ee6df1cf-1f6f-42a8-b2ee-867d8fec5a4e",
+        "email": "Jan.Zulauf36@roq.tech",
+        "firstName": "Darwin",
+        "lastName": "Kling",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/30857004",
+        "tenantId": null
+      },
+      {
+        "reference": "dfb580e8-9346-4259-b6d6-f9589fbb84a0",
+        "email": "Amara64@roq.tech",
+        "firstName": "Cicero",
+        "lastName": "Legros",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/866.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "a9a409b1-893e-4c5d-a7c5-906d6e8e4162",
+        "email": "Noe.Morar-Feeney@roq.tech",
+        "firstName": "Alexane",
+        "lastName": "Bartell",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/85446695",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "warehouse": [
+      {
+        "id": "4887eb43-c92c-48ac-9d4a-ea25aae66533",
+        "created_at": "2023-09-27T18:54:13.609Z",
+        "updated_at": "2023-09-27T13:53:00.964Z",
+        "location": "New York",
+        "capacity": 54900,
+        "warehouse_type": "Distribution Center",
+        "operational_hours": "8:00 AM - 5:00 PM"
+      },
+      {
+        "id": "579f2cb3-06f2-4f3d-97d9-1f757c0687b1",
+        "created_at": "2023-09-27T14:16:53.574Z",
+        "updated_at": "2023-09-27T22:07:36.346Z",
+        "location": "Los Angeles",
+        "capacity": 31853,
+        "warehouse_type": "Fulfillment Center",
+        "operational_hours": "9:00 AM - 6:00 PM"
+      },
+      {
+        "id": "c5e1f5e6-1a0f-44f8-90bb-725fb7c35cd4",
+        "created_at": "2023-09-28T01:18:55.854Z",
+        "updated_at": "2023-09-28T03:29:03.485Z",
+        "location": "Chicago",
+        "capacity": 29020,
+        "warehouse_type": "Cold Storage",
+        "operational_hours": "10:00 AM - 7:00 PM"
+      },
+      {
+        "id": "12d5d693-4dfe-4707-aa7a-e0d3fe689291",
+        "created_at": "2023-09-27T17:50:01.913Z",
+        "updated_at": "2023-09-27T19:57:36.488Z",
+        "location": "Houston",
+        "capacity": 47661,
+        "warehouse_type": "Cross-docking Facility",
+        "operational_hours": "7:00 AM - 4:00 PM"
+      },
+      {
+        "id": "76e379b7-0dec-4832-9621-7f9fbb62e3c8",
+        "created_at": "2023-09-27T14:19:30.774Z",
+        "updated_at": "2023-09-27T22:13:43.616Z",
+        "location": "Miami",
+        "capacity": 26821,
+        "warehouse_type": "Consolidation Warehouse",
+        "operational_hours": "6:00 AM - 3:00 PM"
+      }
+    ],
+    "shipment": [
+      {
+        "id": "66b3d7c3-eb65-4d46-8d8a-3fdc787d778c",
+        "created_at": "2023-09-27T16:28:37.571Z",
+        "updated_at": "2023-09-27T08:57:02.084Z",
+        "estimated_delivery_date": "2023-09-27T23:48:42.623Z",
+        "tracking_number": "1234567890",
+        "shipment_status": "In Transit",
+        "carrier_name": "UPS",
+        "shipment_cost": 0.7435309996362776
+      },
+      {
+        "id": "ec050981-0449-4445-9be2-30b8679ea9bb",
+        "created_at": "2023-09-27T20:05:09.649Z",
+        "updated_at": "2023-09-27T21:40:24.297Z",
+        "estimated_delivery_date": "2023-09-28T06:00:08.860Z",
+        "tracking_number": "0987654321",
+        "shipment_status": "Out for Delivery",
+        "carrier_name": "FedEx",
+        "shipment_cost": 0.9771370692178607
+      },
+      {
+        "id": "2c16c168-f4a4-4465-918e-94bfa8cb2327",
+        "created_at": "2023-09-27T17:37:36.252Z",
+        "updated_at": "2023-09-28T06:26:40.578Z",
+        "estimated_delivery_date": "2023-09-27T19:27:32.066Z",
+        "tracking_number": "9876543210",
+        "shipment_status": "Delivered",
+        "carrier_name": "DHL",
+        "shipment_cost": 0.854425109224394
+      },
+      {
+        "id": "fe9afce0-053c-477d-a84a-be8948a1fb88",
+        "created_at": "2023-09-27T21:01:39.109Z",
+        "updated_at": "2023-09-28T05:28:36.743Z",
+        "estimated_delivery_date": "2023-09-28T05:55:40.210Z",
+        "tracking_number": "0123456789",
+        "shipment_status": "Arrived at Destination",
+        "carrier_name": "USPS",
+        "shipment_cost": 0.3142127206083387
+      },
+      {
+        "id": "5d209a53-3581-4fc8-aa8c-12fc357ae42c",
+        "created_at": "2023-09-27T09:27:18.072Z",
+        "updated_at": "2023-09-27T19:43:05.098Z",
+        "estimated_delivery_date": "2023-09-28T00:36:05.323Z",
+        "tracking_number": "5432109876",
+        "shipment_status": "Pending",
+        "carrier_name": "Amazon Logistics",
+        "shipment_cost": 0.7544286362826824
+      }
+    ],
+    "purchase_order": [
+      {
+        "id": "3fcede1d-4de2-463c-8817-797ccf223d01",
+        "created_at": "2023-09-27T09:51:53.625Z",
+        "updated_at": "2023-09-27T10:41:44.934Z",
+        "expected_delivery_date": "2023-09-28T04:28:37.940Z",
+        "order_status": "Pending",
+        "delivery_notes": "Leave at front door"
+      },
+      {
+        "id": "892e3854-5207-427b-ac3c-f65736e5d71b",
+        "created_at": "2023-09-27T09:03:17.983Z",
+        "updated_at": "2023-09-27T16:02:40.573Z",
+        "expected_delivery_date": "2023-09-28T04:04:37.528Z",
+        "order_status": "Processing",
+        "delivery_notes": "Signature required"
+      },
+      {
+        "id": "bf982134-32ad-4865-b6b7-a2ff4283051b",
+        "created_at": "2023-09-27T20:05:11.123Z",
+        "updated_at": "2023-09-28T04:40:10.769Z",
+        "expected_delivery_date": "2023-09-27T12:12:01.889Z",
+        "order_status": "Shipped",
+        "delivery_notes": "Call before delivery"
+      },
+      {
+        "id": "aef87106-2e41-4186-8864-6a01c9d26bea",
+        "created_at": "2023-09-28T03:58:20.250Z",
+        "updated_at": "2023-09-28T07:10:51.741Z",
+        "expected_delivery_date": "2023-09-27T21:10:25.101Z",
+        "order_status": "Delivered",
+        "delivery_notes": "Deliver to reception"
+      },
+      {
+        "id": "9cce7870-6ed0-496a-852a-b04169f9dabe",
+        "created_at": "2023-09-28T02:32:03.365Z",
+        "updated_at": "2023-09-27T08:36:27.076Z",
+        "expected_delivery_date": "2023-09-27T13:53:48.703Z",
+        "order_status": "Cancelled",
+        "delivery_notes": "Do not ship before specified date"
+      }
+    ],
+    "product_category": [
+      {
+        "id": "009bf2ef-cb45-4d5d-9ef9-156cca8ee76f",
+        "created_at": "2023-09-28T07:15:34.966Z",
+        "updated_at": "2023-09-27T08:03:53.342Z",
+        "description": "Electronics",
+        "category_code": "ELE",
+        "category_image_url": "https://example.com/electronics.jpg"
+      },
+      {
+        "id": "794dbe0c-a4a3-48a4-9d2a-7fb630a5af9e",
+        "created_at": "2023-09-28T06:11:25.379Z",
+        "updated_at": "2023-09-27T19:55:08.062Z",
+        "description": "Clothing",
+        "category_code": "CLT",
+        "category_image_url": "https://example.com/clothing.jpg"
+      },
+      {
+        "id": "e66c2bef-a546-43d9-87d5-fef762f4525b",
+        "created_at": "2023-09-27T15:23:03.729Z",
+        "updated_at": "2023-09-27T18:24:05.028Z",
+        "description": "Home Decor",
+        "category_code": "HMD",
+        "category_image_url": "https://example.com/homedecor.jpg"
+      },
+      {
+        "id": "e8dc1d3c-c0a1-404a-89a1-cf217fc2b8cf",
+        "created_at": "2023-09-27T09:28:49.683Z",
+        "updated_at": "2023-09-27T15:40:03.915Z",
+        "description": "Sports Equipment",
+        "category_code": "SPT",
+        "category_image_url": "https://example.com/sportsequipment.jpg"
+      },
+      {
+        "id": "79346cb9-cc3f-4912-b36e-3cb031a79f65",
+        "created_at": "2023-09-27T10:29:47.296Z",
+        "updated_at": "2023-09-27T10:45:18.523Z",
+        "description": "Beauty",
+        "category_code": "BTY",
+        "category_image_url": "https://example.com/beauty.jpg"
+      }
+    ],
+    "product": [
+      {
+        "id": "81a994c7-ce6c-4c6c-93f2-d6460c6dfd91",
+        "created_at": "2023-09-27T18:29:17.333Z",
+        "updated_at": "2023-09-27T12:35:14.618Z",
+        "product_description": "Smartphone",
+        "product_weight": 0.4668549655470997,
+        "product_dimensions": "5.5 inches",
+        "product_material": "Plastic",
+        "product_color": "Black",
+        "product_category": "Electronics",
+        "product_manufacturer": "Apple",
+        "product_price": 0.6148778211791068
+      },
+      {
+        "id": "38666076-eda7-4afa-b477-1460b4b75e97",
+        "created_at": "2023-09-27T10:14:42.918Z",
+        "updated_at": "2023-09-28T04:33:39.115Z",
+        "product_description": "T-shirt",
+        "product_weight": 0.20692666387185454,
+        "product_dimensions": "S, M, L, XL",
+        "product_material": "Cotton",
+        "product_color": "White",
+        "product_category": "Clothing",
+        "product_manufacturer": "Nike",
+        "product_price": 0.7826556472573429
+      },
+      {
+        "id": "dc5a881c-e62a-40d5-aa3a-acc6f10b0ac3",
+        "created_at": "2023-09-27T17:11:19.037Z",
+        "updated_at": "2023-09-27T16:14:35.446Z",
+        "product_description": "Candle Holder",
+        "product_weight": 0.42925587319768965,
+        "product_dimensions": "6.5 x 4.5 x 3 inches",
+        "product_material": "Metal",
+        "product_color": "Silver",
+        "product_category": "Home Decor",
+        "product_manufacturer": "IKEA",
+        "product_price": 0.8525061556138098
+      },
+      {
+        "id": "f81f2f05-d7a2-4765-bfc8-4706cd306f37",
+        "created_at": "2023-09-27T21:56:16.624Z",
+        "updated_at": "2023-09-27T09:37:20.990Z",
+        "product_description": "Tennis Racket",
+        "product_weight": 0.9098241329193115,
+        "product_dimensions": "27 inches",
+        "product_material": "Graphite",
+        "product_color": "Red",
+        "product_category": "Sports Equipment",
+        "product_manufacturer": "Wilson",
+        "product_price": 0.697961151599884
+      },
+      {
+        "id": "b960edda-e1aa-4a53-8acf-25477d1f4823",
+        "created_at": "2023-09-27T22:22:30.929Z",
+        "updated_at": "2023-09-27T19:26:59.580Z",
+        "product_description": "Lipstick",
+        "product_weight": 0.20298587414436042,
+        "product_dimensions": "0.8 x 0.8 x 3.5 inches",
+        "product_material": "Wax",
+        "product_color": "Pink",
+        "product_category": "Beauty",
+        "product_manufacturer": "L'Oreal",
+        "product_price": 0.6853057541884482
+      }
+    ],
+    "order": [
+      {
+        "id": "b6ca88a0-93d8-4340-b699-0b4f0720ef91",
+        "created_at": "2023-09-27T23:23:20.540Z",
+        "updated_at": "2023-09-28T04:07:03.075Z",
+        "order_status": "Pending",
+        "delivery_date": "2023-09-27T11:01:01.907Z",
+        "estimated_delivery_date": "2023-09-27T16:07:32.182Z",
+        "order_tracking_number": "1234567890",
+        "order_priority": "High"
+      },
+      {
+        "id": "46524cbb-fcb9-49d5-89d8-cbed0877fd73",
+        "created_at": "2023-09-27T19:53:38.986Z",
+        "updated_at": "2023-09-28T00:23:20.323Z",
+        "order_status": "Processing",
+        "delivery_date": "2023-09-28T02:13:51.144Z",
+        "estimated_delivery_date": "2023-09-28T07:14:13.563Z",
+        "order_tracking_number": "0987654321",
+        "order_priority": "Medium"
+      },
+      {
+        "id": "9375842b-8903-4dae-b1d7-e3a8cb5ad8f0",
+        "created_at": "2023-09-27T19:41:58.586Z",
+        "updated_at": "2023-09-28T03:16:15.197Z",
+        "order_status": "Shipped",
+        "delivery_date": "2023-09-28T05:36:21.879Z",
+        "estimated_delivery_date": "2023-09-28T03:18:34.789Z",
+        "order_tracking_number": "9876543210",
+        "order_priority": "Low"
+      },
+      {
+        "id": "dfe553fe-292f-48e3-91df-40a2802f4c9b",
+        "created_at": "2023-09-27T16:44:20.950Z",
+        "updated_at": "2023-09-28T05:41:34.862Z",
+        "order_status": "Delivered",
+        "delivery_date": "2023-09-27T15:01:05.189Z",
+        "estimated_delivery_date": "2023-09-27T16:04:49.381Z",
+        "order_tracking_number": "0123456789",
+        "order_priority": "Urgent"
+      },
+      {
+        "id": "24621edf-403e-4a7a-bc05-0c9806e06f58",
+        "created_at": "2023-09-28T03:41:58.872Z",
+        "updated_at": "2023-09-27T11:20:55.827Z",
+        "order_status": "Cancelled",
+        "delivery_date": "2023-09-28T05:08:02.312Z",
+        "estimated_delivery_date": "2023-09-28T03:24:40.447Z",
+        "order_tracking_number": "5432109876",
+        "order_priority": "Normal"
+      }
+    ],
+    "inventory": [
+      {
+        "id": "757c8ac9-f72e-4fe7-9930-38b72b2afad6",
+        "created_at": "2023-09-27T15:27:16.470Z",
+        "updated_at": "2023-09-27T12:01:24.532Z",
+        "last_checked": "2023-09-27T21:06:21.862Z",
+        "last_updated": "2023-09-28T04:15:14.644Z",
+        "quantity_on_hand": 68703,
+        "expiration_date": "2023-09-27T11:30:55.581Z",
+        "reorder_threshold": 85759
+      },
+      {
+        "id": "443fb73b-c555-4aa0-8bf1-2c1bdc061cb1",
+        "created_at": "2023-09-28T03:14:17.789Z",
+        "updated_at": "2023-09-27T09:03:18.401Z",
+        "last_checked": "2023-09-27T16:35:43.932Z",
+        "last_updated": "2023-09-27T10:43:36.576Z",
+        "quantity_on_hand": 11025,
+        "expiration_date": "2023-09-27T18:51:53.077Z",
+        "reorder_threshold": 25563
+      },
+      {
+        "id": "40f86b83-c189-4b1f-b112-579cd3bf7c56",
+        "created_at": "2023-09-27T10:47:11.430Z",
+        "updated_at": "2023-09-27T17:18:35.119Z",
+        "last_checked": "2023-09-27T11:18:23.240Z",
+        "last_updated": "2023-09-28T02:13:03.063Z",
+        "quantity_on_hand": 70963,
+        "expiration_date": "2023-09-27T14:25:07.430Z",
+        "reorder_threshold": 35673
+      },
+      {
+        "id": "59b4c0bc-250a-467b-9e44-a2c850fbb5f7",
+        "created_at": "2023-09-28T05:04:47.719Z",
+        "updated_at": "2023-09-28T07:32:47.845Z",
+        "last_checked": "2023-09-27T20:08:12.222Z",
+        "last_updated": "2023-09-27T20:52:41.478Z",
+        "quantity_on_hand": 80428,
+        "expiration_date": "2023-09-27T10:10:26.152Z",
+        "reorder_threshold": 79493
+      },
+      {
+        "id": "0b1f29ba-13c7-43fb-93a2-069b61a0bc0e",
+        "created_at": "2023-09-27T09:29:44.889Z",
+        "updated_at": "2023-09-27T09:36:57.913Z",
+        "last_checked": "2023-09-27T18:39:47.735Z",
+        "last_updated": "2023-09-27T17:28:23.535Z",
+        "quantity_on_hand": 5582,
+        "expiration_date": "2023-09-28T07:06:51.425Z",
+        "reorder_threshold": 53724
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "1df51443-0fe9-4180-b588-fd448e608089",
+        "email": "Kaelyn_Lang@roq.tech",
+        "firstName": "Lavern",
+        "lastName": "Ernser",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/223",
+        "tenantId": null
+      },
+      {
+        "reference": "c555da07-073a-4cbb-96ef-8ac31f3a19a8",
+        "email": "Greta23@roq.tech",
+        "firstName": "Alex",
+        "lastName": "Champlin",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/11246025",
+        "tenantId": null
+      },
+      {
+        "reference": "1f694318-ceb0-44b3-a101-d0c772cfe6e8",
+        "email": "Reyes15@roq.tech",
+        "firstName": "Missouri",
+        "lastName": "Kutch",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/66901300",
+        "tenantId": null
+      },
+      {
+        "reference": "c12e966d-f563-494f-847a-214041310e73",
+        "email": "Lambert_Mayer@roq.tech",
+        "firstName": "Avery",
+        "lastName": "Lind",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/49445785",
+        "tenantId": null
+      },
+      {
+        "reference": "93fd2d80-d7f1-46c0-9610-d0db7197312d",
+        "email": "Gaston.Pagac@roq.tech",
+        "firstName": "Will",
+        "lastName": "Walker",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/54936145",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "warehouse": [
+      {
+        "id": "f543f47e-0de7-4d56-82cb-cc4758a72ffc",
+        "created_at": "2023-09-28T06:57:09.197Z",
+        "updated_at": "2023-09-28T01:01:15.984Z",
+        "location": "New York",
+        "capacity": 90887,
+        "warehouse_type": "Distribution Center",
+        "operational_hours": "8:00 AM - 5:00 PM"
+      },
+      {
+        "id": "17846d2e-779c-4ead-b2ad-d0f5134f47e8",
+        "created_at": "2023-09-27T16:20:49.921Z",
+        "updated_at": "2023-09-28T07:20:18.189Z",
+        "location": "Los Angeles",
+        "capacity": 81214,
+        "warehouse_type": "Fulfillment Center",
+        "operational_hours": "9:00 AM - 6:00 PM"
+      },
+      {
+        "id": "bcf2858b-75fc-4afd-88e3-ba817d060709",
+        "created_at": "2023-09-28T04:03:51.544Z",
+        "updated_at": "2023-09-27T13:31:56.513Z",
+        "location": "Chicago",
+        "capacity": 59898,
+        "warehouse_type": "Cold Storage",
+        "operational_hours": "24/7"
+      },
+      {
+        "id": "b01a8a8f-d2f0-4207-ae12-1843d3c4d76b",
+        "created_at": "2023-09-27T08:04:39.692Z",
+        "updated_at": "2023-09-27T15:12:21.150Z",
+        "location": "Houston",
+        "capacity": 9675,
+        "warehouse_type": "Cross-Docking Facility",
+        "operational_hours": "7:00 AM - 4:00 PM"
+      },
+      {
+        "id": "71f1335e-617a-485c-8c79-573c187cbe6e",
+        "created_at": "2023-09-27T13:31:08.555Z",
+        "updated_at": "2023-09-28T04:51:30.820Z",
+        "location": "Miami",
+        "capacity": 13589,
+        "warehouse_type": "Bonded Warehouse",
+        "operational_hours": "10:00 AM - 7:00 PM"
+      }
+    ],
+    "shipment": [
+      {
+        "id": "3a3302b8-86ec-4ec7-a2ac-c72c3cce9e64",
+        "created_at": "2023-09-28T04:24:06.361Z",
+        "updated_at": "2023-09-27T15:52:57.073Z",
+        "estimated_delivery_date": "2023-09-27T15:38:23.186Z",
+        "tracking_number": "123456789",
+        "shipment_status": "In Transit",
+        "carrier_name": "UPS",
+        "shipment_cost": 0.2942048341501504
+      },
+      {
+        "id": "6bda513a-11e5-4be7-9ab1-60395bab9b47",
+        "created_at": "2023-09-28T07:03:22.868Z",
+        "updated_at": "2023-09-28T00:58:48.155Z",
+        "estimated_delivery_date": "2023-09-27T13:04:10.334Z",
+        "tracking_number": "987654321",
+        "shipment_status": "Out for Delivery",
+        "carrier_name": "FedEx",
+        "shipment_cost": 0.6663563516922295
+      },
+      {
+        "id": "bba2aa87-fdc3-4501-85ed-9e9d1d95a2da",
+        "created_at": "2023-09-28T06:58:48.357Z",
+        "updated_at": "2023-09-27T21:05:56.225Z",
+        "estimated_delivery_date": "2023-09-28T05:04:06.772Z",
+        "tracking_number": "456789123",
+        "shipment_status": "Delivered",
+        "carrier_name": "DHL",
+        "shipment_cost": 0.15337842120788991
+      },
+      {
+        "id": "f7fbddcb-b965-4bc4-ab5b-2f2a84fdf178",
+        "created_at": "2023-09-28T00:43:30.401Z",
+        "updated_at": "2023-09-27T23:40:16.934Z",
+        "estimated_delivery_date": "2023-09-27T23:50:25.174Z",
+        "tracking_number": "321654987",
+        "shipment_status": "Arrived at Destination",
+        "carrier_name": "USPS",
+        "shipment_cost": 0.801751495571807
+      },
+      {
+        "id": "dcf4b34e-9442-482b-a1fa-b6463583f107",
+        "created_at": "2023-09-28T00:58:52.970Z",
+        "updated_at": "2023-09-28T06:53:39.458Z",
+        "estimated_delivery_date": "2023-09-27T16:47:07.232Z",
+        "tracking_number": "789123456",
+        "shipment_status": "On Hold",
+        "carrier_name": "Amazon Logistics",
+        "shipment_cost": 0.5503883282653987
+      }
+    ],
+    "purchase_order": [
+      {
+        "id": "0091c909-f69b-4ed9-b415-a2ce64083e11",
+        "created_at": "2023-09-28T05:55:01.723Z",
+        "updated_at": "2023-09-27T09:52:37.303Z",
+        "expected_delivery_date": "2023-09-27T12:39:31.218Z",
+        "order_status": "Pending",
+        "delivery_notes": "Leave at front door"
+      },
+      {
+        "id": "a7b9f994-5ab9-42ea-a3e6-2f9607688841",
+        "created_at": "2023-09-27T19:56:26.665Z",
+        "updated_at": "2023-09-27T16:46:07.439Z",
+        "expected_delivery_date": "2023-09-27T13:41:21.799Z",
+        "order_status": "Processing",
+        "delivery_notes": "Signature required"
+      },
+      {
+        "id": "5c871f31-84c1-4fa4-9148-cff61b37ab84",
+        "created_at": "2023-09-28T03:54:09.566Z",
+        "updated_at": "2023-09-28T03:56:41.861Z",
+        "expected_delivery_date": "2023-09-27T15:31:43.831Z",
+        "order_status": "Shipped",
+        "delivery_notes": "Call before delivery"
+      },
+      {
+        "id": "214f5ef8-f87a-4701-82dc-e87d7ff6a87d",
+        "created_at": "2023-09-27T15:01:10.335Z",
+        "updated_at": "2023-09-28T04:09:42.283Z",
+        "expected_delivery_date": "2023-09-27T13:15:35.423Z",
+        "order_status": "Delivered",
+        "delivery_notes": "Deliver to reception"
+      },
+      {
+        "id": "81157914-79d8-4b3b-924c-7e9362146512",
+        "created_at": "2023-09-27T22:46:07.143Z",
+        "updated_at": "2023-09-27T12:25:35.809Z",
+        "expected_delivery_date": "2023-09-28T02:00:21.900Z",
+        "order_status": "Cancelled",
+        "delivery_notes": "Do not ship before specified date"
+      }
+    ],
+    "product_category": [
+      {
+        "id": "4de78cae-13c7-45fa-bd52-380cecaaacf9",
+        "created_at": "2023-09-28T01:33:31.772Z",
+        "updated_at": "2023-09-27T12:46:42.630Z",
+        "description": "Electronics",
+        "category_code": "ELE",
+        "category_image_url": "https://example.com/electronics.jpg"
+      },
+      {
+        "id": "1bcc9be2-8e14-4ec1-8de3-a3b15dc4a9b4",
+        "created_at": "2023-09-27T09:31:35.314Z",
+        "updated_at": "2023-09-27T16:52:00.133Z",
+        "description": "Home Decor",
+        "category_code": "DEC",
+        "category_image_url": "https://example.com/home-decor.jpg"
+      },
+      {
+        "id": "48753520-dab3-451b-83f2-2be693beaf2e",
+        "created_at": "2023-09-27T12:09:42.133Z",
+        "updated_at": "2023-09-28T03:30:19.713Z",
+        "description": "Clothing",
+        "category_code": "CLT",
+        "category_image_url": "https://example.com/clothing.jpg"
+      },
+      {
+        "id": "f294649d-5202-44e7-955d-81ad827f75af",
+        "created_at": "2023-09-28T04:44:59.044Z",
+        "updated_at": "2023-09-27T16:53:19.044Z",
+        "description": "Beauty",
+        "category_code": "BTY",
+        "category_image_url": "https://example.com/beauty.jpg"
+      },
+      {
+        "id": "d17cdd70-b261-4cb8-ae53-54b2f87f5123",
+        "created_at": "2023-09-27T10:39:00.427Z",
+        "updated_at": "2023-09-27T23:26:56.628Z",
+        "description": "Sports",
+        "category_code": "SPT",
+        "category_image_url": "https://example.com/sports.jpg"
+      }
+    ],
+    "product": [
+      {
+        "id": "da2dcfbd-a550-40ef-9091-1973c9484eb6",
+        "created_at": "2023-09-27T11:47:57.700Z",
+        "updated_at": "2023-09-27T15:21:23.969Z",
+        "product_description": "Smartphone",
+        "product_weight": 0.045758705120533705,
+        "product_dimensions": "5.7\" x 2.8\" x 0.3\"",
+        "product_material": "Glass, Aluminum",
+        "product_color": "Black",
+        "product_category": "Electronics",
+        "product_manufacturer": "Apple",
+        "product_price": 0.06064096977934241
+      },
+      {
+        "id": "109d5cb5-53b8-479f-9050-dba12322b75f",
+        "created_at": "2023-09-27T11:27:35.370Z",
+        "updated_at": "2023-09-27T23:40:10.243Z",
+        "product_description": "Sofa",
+        "product_weight": 0.8706716333981603,
+        "product_dimensions": "78\" x 32\" x 34\"",
+        "product_material": "Fabric, Wood",
+        "product_color": "Gray",
+        "product_category": "Home Decor",
+        "product_manufacturer": "IKEA",
+        "product_price": 0.9284069745335728
+      },
+      {
+        "id": "62492703-86a1-4b1a-9ed9-6cb3ed1aa3eb",
+        "created_at": "2023-09-27T18:19:34.202Z",
+        "updated_at": "2023-09-27T13:45:25.793Z",
+        "product_description": "T-Shirt",
+        "product_weight": 0.23768717073835433,
+        "product_dimensions": "S, M, L, XL",
+        "product_material": "Cotton",
+        "product_color": "White",
+        "product_category": "Clothing",
+        "product_manufacturer": "Nike",
+        "product_price": 0.9927992320153862
+      },
+      {
+        "id": "e43b35bc-3bd4-49bb-af94-515265feb0a6",
+        "created_at": "2023-09-27T10:46:08.492Z",
+        "updated_at": "2023-09-28T00:18:27.678Z",
+        "product_description": "Lipstick",
+        "product_weight": 0.9117469233460724,
+        "product_dimensions": "0.3 oz",
+        "product_material": "Cosmetics",
+        "product_color": "Red",
+        "product_category": "Beauty",
+        "product_manufacturer": "L'Oreal",
+        "product_price": 0.5827072036918253
+      },
+      {
+        "id": "8a35bdbe-68bb-4f9b-9ebf-853bdaef4f22",
+        "created_at": "2023-09-28T04:04:56.535Z",
+        "updated_at": "2023-09-27T12:06:53.712Z",
+        "product_description": "Running Shoes",
+        "product_weight": 0.23088382952846587,
+        "product_dimensions": "US 9, EU 42",
+        "product_material": "Synthetic",
+        "product_color": "Blue",
+        "product_category": "Sports",
+        "product_manufacturer": "Adidas",
+        "product_price": 0.5748020706232637
+      }
+    ],
+    "order": [
+      {
+        "id": "83c19bf7-b542-447b-986e-9030db5a7282",
+        "created_at": "2023-09-27T12:45:36.909Z",
+        "updated_at": "2023-09-27T23:49:54.703Z",
+        "order_status": "Pending",
+        "delivery_date": "2023-09-27T16:33:16.855Z",
+        "estimated_delivery_date": "2023-09-27T10:09:03.853Z",
+        "order_tracking_number": "123456789",
+        "order_priority": "High"
+      },
+      {
+        "id": "82cbc48f-cf7d-4afc-b15a-fcf7dcd3b5e1",
+        "created_at": "2023-09-28T07:14:28.594Z",
+        "updated_at": "2023-09-28T05:11:13.284Z",
+        "order_status": "Processing",
+        "delivery_date": "2023-09-28T03:50:56.784Z",
+        "estimated_delivery_date": "2023-09-27T23:15:58.116Z",
+        "order_tracking_number": "987654321",
+        "order_priority": "Medium"
+      },
+      {
+        "id": "3fcb0b28-3da9-4b96-838e-d3f585ec7c00",
+        "created_at": "2023-09-28T04:04:56.156Z",
+        "updated_at": "2023-09-27T17:31:04.792Z",
+        "order_status": "Shipped",
+        "delivery_date": "2023-09-27T20:26:58.635Z",
+        "estimated_delivery_date": "2023-09-27T21:06:44.432Z",
+        "order_tracking_number": "456789123",
+        "order_priority": "Low"
+      },
+      {
+        "id": "8351019e-0814-41fe-a4ec-bd95115ec7bb",
+        "created_at": "2023-09-28T04:32:24.129Z",
+        "updated_at": "2023-09-28T01:15:15.051Z",
+        "order_status": "Delivered",
+        "delivery_date": "2023-09-27T21:35:20.657Z",
+        "estimated_delivery_date": "2023-09-28T01:26:50.280Z",
+        "order_tracking_number": "321654987",
+        "order_priority": "Urgent"
+      },
+      {
+        "id": "8d4e47fe-29c4-43b1-9976-6c04114773cb",
+        "created_at": "2023-09-27T10:15:57.048Z",
+        "updated_at": "2023-09-27T23:00:34.905Z",
+        "order_status": "Cancelled",
+        "delivery_date": "2023-09-27T22:28:21.403Z",
+        "estimated_delivery_date": "2023-09-27T12:00:26.887Z",
+        "order_tracking_number": "789123456",
+        "order_priority": "Normal"
+      }
+    ],
+    "inventory": [
+      {
+        "id": "149eb424-9db4-4e2e-8450-e8e150735373",
+        "created_at": "2023-09-27T09:49:59.492Z",
+        "updated_at": "2023-09-27T14:52:22.250Z",
+        "last_checked": "2023-09-27T12:39:23.692Z",
+        "last_updated": "2023-09-27T09:52:37.450Z",
+        "quantity_on_hand": 99142,
+        "expiration_date": "2023-09-27T11:36:18.617Z",
+        "reorder_threshold": 89075
+      },
+      {
+        "id": "47ba43d8-6963-4b02-b684-6be1017a13b0",
+        "created_at": "2023-09-27T12:45:51.743Z",
+        "updated_at": "2023-09-27T09:40:29.581Z",
+        "last_checked": "2023-09-28T06:13:16.573Z",
+        "last_updated": "2023-09-27T19:16:30.813Z",
+        "quantity_on_hand": 49348,
+        "expiration_date": "2023-09-27T08:03:40.982Z",
+        "reorder_threshold": 72589
+      },
+      {
+        "id": "5626a10a-0386-46c7-acd5-1a32d37ad10e",
+        "created_at": "2023-09-28T05:46:28.762Z",
+        "updated_at": "2023-09-27T10:36:39.269Z",
+        "last_checked": "2023-09-27T09:50:21.818Z",
+        "last_updated": "2023-09-28T04:17:03.183Z",
+        "quantity_on_hand": 39724,
+        "expiration_date": "2023-09-28T04:00:59.177Z",
+        "reorder_threshold": 18109
+      },
+      {
+        "id": "0bc58b08-6ff8-47da-b34c-f21396b2c1b0",
+        "created_at": "2023-09-27T20:05:55.453Z",
+        "updated_at": "2023-09-27T20:11:31.362Z",
+        "last_checked": "2023-09-27T10:31:32.259Z",
+        "last_updated": "2023-09-27T10:39:56.933Z",
+        "quantity_on_hand": 32267,
+        "expiration_date": "2023-09-27T19:59:29.309Z",
+        "reorder_threshold": 26367
+      },
+      {
+        "id": "ccd7e46a-91aa-43c5-b111-4a3b4613bd0a",
+        "created_at": "2023-09-27T18:11:19.466Z",
+        "updated_at": "2023-09-27T14:50:19.241Z",
+        "last_checked": "2023-09-28T02:20:11.147Z",
+        "last_updated": "2023-09-28T02:24:14.435Z",
+        "quantity_on_hand": 27503,
+        "expiration_date": "2023-09-27T13:30:36.822Z",
+        "reorder_threshold": 25665
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "4fba2848-6d0c-4807-a345-a96cb624f48e",
+        "email": "Brittany.Wiza@roq.tech",
+        "firstName": "Yolanda",
+        "lastName": "White",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/50433209",
+        "tenantId": null
+      },
+      {
+        "reference": "f9dff662-70c2-4c30-bf47-d38f9bde17ac",
+        "email": "Freeda_Kuhlman@roq.tech",
+        "firstName": "Ayden",
+        "lastName": "Stroman",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/51.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "fe0da65b-cfc5-4b66-bb1d-3a13a2f2e5b6",
+        "email": "Aurelie_Abshire60@roq.tech",
+        "firstName": "Antonia",
+        "lastName": "Mohr-Howell",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/79057333",
+        "tenantId": null
+      },
+      {
+        "reference": "e9ec7002-49c8-4ea1-bd0a-0183a5dc9a56",
+        "email": "Stewart_Swaniawski@roq.tech",
+        "firstName": "Sally",
+        "lastName": "Zieme",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1222.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "c20059c7-3e0f-4451-9ce6-2c785dcb2c6a",
+        "email": "Raul.Casper@roq.tech",
+        "firstName": "Giovani",
+        "lastName": "Brown",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/131.jpg",
+        "tenantId": null
+      }
+    ]
+  }
+]
